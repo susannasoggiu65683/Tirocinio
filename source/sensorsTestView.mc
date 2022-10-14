@@ -1,4 +1,5 @@
 import Toybox.Graphics;
+import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.Sensor;
 import Toybox.System;
@@ -12,7 +13,7 @@ class sensorsTestView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
-        Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
+        //Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
     }
     
