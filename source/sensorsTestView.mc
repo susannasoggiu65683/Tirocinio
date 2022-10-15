@@ -7,12 +7,13 @@ import Toybox.Timer;
 import Toybox.Timer;
 import Toybox.WatchUi;
 
-class sensorsTestView extends WatchUi.View {
+class sensorsTestView extends WatchUi.WatchFace {
 	
 	var hrData;
 
     function initialize() {
-        View.initialize();
+        //View.initialize();
+        WatchFace.initialize();
         //Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
     }
@@ -35,7 +36,8 @@ class sensorsTestView extends WatchUi.View {
 	
 	    // Load your resources here
     function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
+        //setLayout(Rez.Layouts.MainLayout(dc));
+        setLayout(Rez.Layouts.WatchFace(dc));
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -46,10 +48,16 @@ class sensorsTestView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-    	var infoString = hrData;
+    	var infoString = "" + hrData;
     	var view = View.findDrawableById("TimeLabel") as Text;
-        //view.setText(infoString);
+        view.setText(infoString);
 		
+
+       // Get and show the current time
+        //var clockTime = System.getClockTime();
+        //var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
+        //var view = View.findDrawableById("TimeLabel") as Text;
+        //view.setText(timeString);
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);

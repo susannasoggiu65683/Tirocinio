@@ -9,94 +9,89 @@
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="2" lineNum="13" parent="globals/sensorsTestMenuDelegate" pc="268435494" symbol="onMenuItem"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="2" lineNum="14" parent="globals/sensorsTestMenuDelegate" pc="268435518" symbol="onMenuItem"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="2" lineNum="15" parent="globals/sensorsTestMenuDelegate" pc="268435529" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="3" lineNum="5" parent="globals/sensorsTestMenuDelegate" pc="268436815" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="3" lineNum="5" parent="globals/sensorsTestMenuDelegate" pc="268436815" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="3" lineNum="5" parent="globals/sensorsTestMenuDelegate" pc="268436671" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestMenuDelegate.mc" id="3" lineNum="5" parent="globals/sensorsTestMenuDelegate" pc="268436671" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="5" lineNum="14" parent="globals/sensorsTestView" pc="268435554" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="5" lineNum="15" parent="globals/sensorsTestView" pc="268435558" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="5" lineNum="17" parent="globals/sensorsTestView" pc="268435576" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="20" parent="globals/sensorsTestView" pc="268435609" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="21" parent="globals/sensorsTestView" pc="268435613" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="22" parent="globals/sensorsTestView" pc="268435629" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="24" parent="globals/sensorsTestView" pc="268435659" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="26" parent="globals/sensorsTestView" pc="268435689" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="27" parent="globals/sensorsTestView" pc="268435719" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="29" parent="globals/sensorsTestView" pc="268435749" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="30" parent="globals/sensorsTestView" pc="268435779" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="31" parent="globals/sensorsTestView" pc="268435809" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="33" parent="globals/sensorsTestView" pc="268435839" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="7" lineNum="37" parent="globals/sensorsTestView" pc="268435856" symbol="onLayout"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="7" lineNum="38" parent="globals/sensorsTestView" pc="268435860" symbol="onLayout"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="8" lineNum="44" parent="globals/sensorsTestView" pc="268435898" symbol="onShow"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="48" parent="globals/sensorsTestView" pc="268435903" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="49" parent="globals/sensorsTestView" pc="268435907" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="50" parent="globals/sensorsTestView" pc="268435917" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="55" parent="globals/sensorsTestView" pc="268435941" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="10" lineNum="61" parent="globals/sensorsTestView" pc="268435962" symbol="onHide"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="11" lineNum="10" parent="globals/sensorsTestView" pc="268436728" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="11" lineNum="10" parent="globals/sensorsTestView" pc="268436728" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="13" lineNum="9" parent="globals/sensorsTestApp" pc="268435967" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="13" lineNum="10" parent="globals/sensorsTestApp" pc="268435971" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="14" lineNum="14" parent="globals/sensorsTestApp" pc="268435990" symbol="onStart"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="15" lineNum="18" parent="globals/sensorsTestApp" pc="268435995" symbol="onStop"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="16" lineNum="22" parent="globals/sensorsTestApp" pc="268436000" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="16" lineNum="23" parent="globals/sensorsTestApp" pc="268436004" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="17" lineNum="7" parent="globals/sensorsTestApp" pc="268436709" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="17" lineNum="7" parent="globals/sensorsTestApp" pc="268436709" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="18" lineNum="28" parent="globals" pc="268436072" symbol="getApp"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="18" lineNum="29" parent="globals" pc="268436084" symbol="getApp"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="20" lineNum="6" parent="globals/sensorsTestDelegate" pc="268436101" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="20" lineNum="7" parent="globals/sensorsTestDelegate" pc="268436105" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="21" lineNum="10" parent="globals/sensorsTestDelegate" pc="268436124" symbol="onMenu"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="21" lineNum="11" parent="globals/sensorsTestDelegate" pc="268436128" symbol="onMenu"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="21" lineNum="12" parent="globals/sensorsTestDelegate" pc="268436212" symbol="onMenu"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="22" lineNum="4" parent="globals/sensorsTestDelegate" pc="268436796" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="22" lineNum="4" parent="globals/sensorsTestDelegate" pc="268436796" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268436771" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="25" lineNum="7" parent="globals/Rez/Fonts" pc="268436792" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="26" lineNum="9" parent="globals/Rez/JsonData" pc="268436794" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="27" lineNum="18" parent="globals/Rez/Layouts" pc="268436216" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="20" parent="globals/Rez/Layouts" pc="268436228" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Layouts" pc="268436241" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="23" parent="globals/Rez/Layouts" pc="268436396" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="24" parent="globals/Rez/Layouts" pc="268436508" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="26" parent="globals/Rez/Layouts" pc="268436545" symbol="MainLayout"/>
-        <entry filename="Rez" id="28" lineNum="11" parent="globals/Rez/Layouts" pc="268436793" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268436573" symbol="initialize"/>
-        <entry filename="Rez" id="29" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268436577" symbol="initialize"/>
-        <entry filename="Rez" id="29" lineNum="42" parent="globals/Rez/Menus/MainMenu" pc="268436595" symbol="initialize"/>
-        <entry filename="Rez" id="29" lineNum="43" parent="globals/Rez/Menus/MainMenu" pc="268436651" symbol="initialize"/>
-        <entry filename="Rez" id="30" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436773" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="30" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436773" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="31" parent="globals/Rez/Menus" pc="268436772" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="32" lineNum="49" parent="globals/Rez/Strings" pc="268436795" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436747" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436747" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="5" lineNum="16" parent="globals/sensorsTestView" pc="268435558" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="5" lineNum="18" parent="globals/sensorsTestView" pc="268435576" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="21" parent="globals/sensorsTestView" pc="268435609" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="22" parent="globals/sensorsTestView" pc="268435613" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="23" parent="globals/sensorsTestView" pc="268435629" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="25" parent="globals/sensorsTestView" pc="268435659" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="27" parent="globals/sensorsTestView" pc="268435689" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="28" parent="globals/sensorsTestView" pc="268435719" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="30" parent="globals/sensorsTestView" pc="268435749" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="31" parent="globals/sensorsTestView" pc="268435779" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="32" parent="globals/sensorsTestView" pc="268435809" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="6" lineNum="34" parent="globals/sensorsTestView" pc="268435839" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="7" lineNum="38" parent="globals/sensorsTestView" pc="268435856" symbol="onLayout"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="7" lineNum="40" parent="globals/sensorsTestView" pc="268435860" symbol="onLayout"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="8" lineNum="46" parent="globals/sensorsTestView" pc="268435898" symbol="onShow"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="50" parent="globals/sensorsTestView" pc="268435903" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="51" parent="globals/sensorsTestView" pc="268435907" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="52" parent="globals/sensorsTestView" pc="268435923" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="53" parent="globals/sensorsTestView" pc="268435947" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="9" lineNum="63" parent="globals/sensorsTestView" pc="268435961" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="10" lineNum="69" parent="globals/sensorsTestView" pc="268435982" symbol="onHide"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="11" lineNum="10" parent="globals/sensorsTestView" pc="268436584" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestView.mc" id="11" lineNum="10" parent="globals/sensorsTestView" pc="268436584" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="13" lineNum="9" parent="globals/sensorsTestApp" pc="268435987" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="13" lineNum="10" parent="globals/sensorsTestApp" pc="268435991" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="14" lineNum="14" parent="globals/sensorsTestApp" pc="268436010" symbol="onStart"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="15" lineNum="18" parent="globals/sensorsTestApp" pc="268436015" symbol="onStop"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="16" lineNum="22" parent="globals/sensorsTestApp" pc="268436020" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="16" lineNum="23" parent="globals/sensorsTestApp" pc="268436024" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="17" lineNum="7" parent="globals/sensorsTestApp" pc="268436565" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="17" lineNum="7" parent="globals/sensorsTestApp" pc="268436565" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="18" lineNum="28" parent="globals" pc="268436092" symbol="getApp"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestApp.mc" id="18" lineNum="29" parent="globals" pc="268436104" symbol="getApp"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="20" lineNum="6" parent="globals/sensorsTestDelegate" pc="268436121" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="20" lineNum="7" parent="globals/sensorsTestDelegate" pc="268436125" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="21" lineNum="10" parent="globals/sensorsTestDelegate" pc="268436144" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="21" lineNum="11" parent="globals/sensorsTestDelegate" pc="268436148" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="21" lineNum="12" parent="globals/sensorsTestDelegate" pc="268436232" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="22" lineNum="4" parent="globals/sensorsTestDelegate" pc="268436652" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\sensorsTestDelegate.mc" id="22" lineNum="4" parent="globals/sensorsTestDelegate" pc="268436652" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268436627" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="6" parent="globals/Rez/Fonts" pc="268436648" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="8" parent="globals/Rez/JsonData" pc="268436650" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="17" parent="globals/Rez/Layouts" pc="268436236" symbol="WatchFace"/>
+        <entry filename="Rez" id="27" lineNum="19" parent="globals/Rez/Layouts" pc="268436248" symbol="WatchFace"/>
+        <entry filename="Rez" id="27" lineNum="21" parent="globals/Rez/Layouts" pc="268436411" symbol="WatchFace"/>
+        <entry filename="Rez" id="28" lineNum="10" parent="globals/Rez/Layouts" pc="268436649" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268436429" symbol="initialize"/>
+        <entry filename="Rez" id="29" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436433" symbol="initialize"/>
+        <entry filename="Rez" id="29" lineNum="37" parent="globals/Rez/Menus/MainMenu" pc="268436451" symbol="initialize"/>
+        <entry filename="Rez" id="29" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436507" symbol="initialize"/>
+        <entry filename="Rez" id="30" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268436629" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="30" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268436629" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="31" lineNum="26" parent="globals/Rez/Menus" pc="268436628" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="32" lineNum="44" parent="globals/Rez/Strings" pc="268436651" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436603" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436603" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="8389346" symbol="text"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="20" method="true" symbol="MainLayout"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry id="10" object="true" symbol="sensorsTestView"/>
-        <entry field="true" id="24" symbol="AppName"/>
+        <entry field="true" id="22" symbol="AppName"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry id="8389345" symbol="rezId"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="23" symbol="prompt"/>
-        <entry field="true" id="17" symbol="id_monkey"/>
+        <entry field="true" id="21" symbol="prompt"/>
         <entry field="true" id="13" symbol="hrData"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="26" symbol="item_2"/>
-        <entry id="25" symbol="item_1"/>
+        <entry id="24" symbol="item_2"/>
+        <entry id="23" symbol="item_1"/>
         <entry id="16" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
@@ -107,14 +102,14 @@
         <entry id="9" object="true" symbol="sensorsTestMenuDelegate"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="19" object="true" symbol="MainMenu"/>
+        <entry id="18" object="true" symbol="MainMenu"/>
         <entry id="11" object="true" symbol="sensorsTestApp"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="14" method="true" symbol="onSensor"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="18" symbol="LauncherIcon"/>
+        <entry field="true" id="17" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8388643" module="true" symbol="Sensor"/>
@@ -132,25 +127,22 @@
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="22" symbol="menu_label_2"/>
-        <entry field="true" id="21" symbol="menu_label_1"/>
+        <entry field="true" id="20" symbol="menu_label_2"/>
+        <entry field="true" id="19" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435553" name="item" stackId="1" startPc="268435479"/>
         <entry arg="true" endPc="268435855" name="sensorInfo" stackId="1" startPc="268435609"/>
         <entry arg="true" endPc="268435897" name="dc" stackId="1" startPc="268435856"/>
-        <entry endPc="268435960" name="view" stackId="3" startPc="268435907"/>
-        <entry endPc="268435960" name="infoString" stackId="2" startPc="268435907"/>
-        <entry arg="true" endPc="268435961" name="dc" stackId="1" startPc="268435903"/>
-        <entry arg="true" endPc="268435994" name="state" stackId="1" startPc="268435990"/>
-        <entry arg="true" endPc="268435999" name="state" stackId="1" startPc="268435995"/>
-        <entry endPc="268436571" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436228"/>
-        <entry endPc="268436571" name="rez_cmp_local_text_2137039034" stackId="3" startPc="268436228"/>
-        <entry endPc="268436571" name="rez_cmp_local_bitmap_id_monkey" stackId="4" startPc="268436228"/>
-        <entry arg="true" endPc="268436572" name="dc" stackId="1" startPc="268436216"/>
+        <entry endPc="268435980" name="view" stackId="3" startPc="268435907"/>
+        <entry endPc="268435980" name="infoString" stackId="2" startPc="268435907"/>
+        <entry arg="true" endPc="268435981" name="dc" stackId="1" startPc="268435903"/>
+        <entry arg="true" endPc="268436014" name="state" stackId="1" startPc="268436010"/>
+        <entry arg="true" endPc="268436019" name="state" stackId="1" startPc="268436015"/>
+        <entry endPc="268436427" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436248"/>
+        <entry arg="true" endPc="268436428" name="dc" stackId="1" startPc="268436236"/>
     </localVars>
     <annotations>
-        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
@@ -163,14 +155,14 @@
         <dataEntry label="globals/sensorsTestView" offset="245" parentId="globals" symbolId="sensorsTestView" type="class"/>
         <dataEntry label="globals/Rez" offset="340" parentId="globals" symbolId="Rez" type="module"/>
         <dataEntry label="globals/Rez/Drawables" offset="419" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="466" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="505" parentId="Menus" symbolId="MainMenu" type="class"/>
-        <dataEntry label="globals/Rez/Fonts" offset="552" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="583" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="622" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="653" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/sensorsTestDelegate" offset="716" parentId="globals" symbolId="sensorsTestDelegate" type="class"/>
-        <dataEntry label="globals/sensorsTestMenuDelegate" offset="771" parentId="globals" symbolId="sensorsTestMenuDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Menus" offset="458" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="497" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="544" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="575" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="614" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="645" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/sensorsTestDelegate" offset="708" parentId="globals" symbolId="sensorsTestDelegate" type="class"/>
+        <dataEntry label="globals/sensorsTestMenuDelegate" offset="763" parentId="globals" symbolId="sensorsTestMenuDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="sensorsTestMenuDelegate" startPc="268435456">
@@ -180,7 +172,7 @@
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436833" name="&lt;init&gt;" parent="sensorsTestMenuDelegate" startPc="268436815">
+        <functionEntry accessMode="protected" endPc="268436689" name="&lt;init&gt;" parent="sensorsTestMenuDelegate" startPc="268436671">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435608" name="initialize" parent="sensorsTestView" startPc="268435554">
@@ -197,74 +189,74 @@
         <functionEntry accessMode="public" endPc="268435902" name="onShow" parent="sensorsTestView" startPc="268435898">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435961" name="onUpdate" parent="sensorsTestView" startPc="268435903">
+        <functionEntry accessMode="public" endPc="268435981" name="onUpdate" parent="sensorsTestView" startPc="268435903">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435966" name="onHide" parent="sensorsTestView" startPc="268435962">
+        <functionEntry accessMode="public" endPc="268435986" name="onHide" parent="sensorsTestView" startPc="268435982">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436746" name="&lt;init&gt;" parent="sensorsTestView" startPc="268436728">
+        <functionEntry accessMode="protected" endPc="268436602" name="&lt;init&gt;" parent="sensorsTestView" startPc="268436584">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435989" name="initialize" parent="sensorsTestApp" startPc="268435967">
+        <functionEntry accessMode="public" endPc="268436009" name="initialize" parent="sensorsTestApp" startPc="268435987">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435994" name="onStart" parent="sensorsTestApp" startPc="268435990">
+        <functionEntry accessMode="public" endPc="268436014" name="onStart" parent="sensorsTestApp" startPc="268436010">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435999" name="onStop" parent="sensorsTestApp" startPc="268435995">
+        <functionEntry accessMode="public" endPc="268436019" name="onStop" parent="sensorsTestApp" startPc="268436015">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436071" name="getInitialView" parent="sensorsTestApp" startPc="268436000">
+        <functionEntry accessMode="public" endPc="268436091" name="getInitialView" parent="sensorsTestApp" startPc="268436020">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436727" name="&lt;init&gt;" parent="sensorsTestApp" startPc="268436709">
+        <functionEntry accessMode="protected" endPc="268436583" name="&lt;init&gt;" parent="sensorsTestApp" startPc="268436565">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436100" name="getApp" startPc="268436072">
+        <functionEntry accessMode="public" endPc="268436120" name="getApp" startPc="268436092">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436123" name="initialize" parent="sensorsTestDelegate" startPc="268436101">
+        <functionEntry accessMode="public" endPc="268436143" name="initialize" parent="sensorsTestDelegate" startPc="268436121">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436215" name="onMenu" parent="sensorsTestDelegate" startPc="268436124">
+        <functionEntry accessMode="public" endPc="268436235" name="onMenu" parent="sensorsTestDelegate" startPc="268436144">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436814" name="&lt;init&gt;" parent="sensorsTestDelegate" startPc="268436796">
+        <functionEntry accessMode="protected" endPc="268436670" name="&lt;init&gt;" parent="sensorsTestDelegate" startPc="268436652">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436771" name="&lt;init&gt;" parent="Drawables" startPc="268436771">
+        <functionEntry accessMode="protected" endPc="268436627" name="&lt;init&gt;" parent="Drawables" startPc="268436627">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436792" name="&lt;init&gt;" parent="Fonts" startPc="268436792">
+        <functionEntry accessMode="protected" endPc="268436648" name="&lt;init&gt;" parent="Fonts" startPc="268436648">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436794" name="&lt;init&gt;" parent="JsonData" startPc="268436794">
+        <functionEntry accessMode="protected" endPc="268436650" name="&lt;init&gt;" parent="JsonData" startPc="268436650">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436572" name="MainLayout" parent="Layouts" startPc="268436216">
+        <functionEntry accessMode="public" endPc="268436428" name="WatchFace" parent="Layouts" startPc="268436236">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436793" name="&lt;init&gt;" parent="Layouts" startPc="268436793">
+        <functionEntry accessMode="protected" endPc="268436649" name="&lt;init&gt;" parent="Layouts" startPc="268436649">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436707" name="initialize" parent="MainMenu" startPc="268436573">
+        <functionEntry accessMode="public" endPc="268436563" name="initialize" parent="MainMenu" startPc="268436429">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436791" name="&lt;init&gt;" parent="MainMenu" startPc="268436773">
+        <functionEntry accessMode="protected" endPc="268436647" name="&lt;init&gt;" parent="MainMenu" startPc="268436629">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436772" name="&lt;init&gt;" parent="Menus" startPc="268436772">
+        <functionEntry accessMode="protected" endPc="268436628" name="&lt;init&gt;" parent="Menus" startPc="268436628">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436795" name="&lt;init&gt;" parent="Strings" startPc="268436795">
+        <functionEntry accessMode="protected" endPc="268436651" name="&lt;init&gt;" parent="Strings" startPc="268436651">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436770" name="&lt;init&gt;" parent="Rez" startPc="268436747">
+        <functionEntry accessMode="protected" endPc="268436626" name="&lt;init&gt;" parent="Rez" startPc="268436603">
             <documentation/>
         </functionEntry>
     </functions>
