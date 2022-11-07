@@ -6,6 +6,9 @@ import Toybox.System;
 import Toybox.Timer;
 import Toybox.Timer;
 import Toybox.WatchUi;
+import Toybox.Activity;
+
+using Toybox.Application.Storage;
 
 class sensorsTestView extends WatchUi.WatchFace {
 	
@@ -14,12 +17,14 @@ class sensorsTestView extends WatchUi.WatchFace {
     function initialize() {
         //View.initialize();
         WatchFace.initialize();
-        //Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
+        Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
     }
     
     function onSensor(sensorInfo as Sensor.Info) as Void {
+    
     	hrData = sensorInfo.heartRate;
+    /**
     	System.println( "Accelerometro: " + sensorInfo.accel);
     	//System.println( "Altitudine: " + sensorInfo.altitude);
     	System.println( "Cadenza: " + sensorInfo.cadence);
@@ -30,7 +35,7 @@ class sensorsTestView extends WatchUi.WatchFace {
     	System.println( "Potenza: " + sensorInfo.power);
     	System.println( "Pressione: " + sensorInfo.pressure);
     	System.println( "Temperatura: " + sensorInfo.temperature);
-
+	*/
     	WatchUi.requestUpdate();
 	}
 	
@@ -52,7 +57,13 @@ class sensorsTestView extends WatchUi.WatchFace {
     	var view = View.findDrawableById("TimeLabel") as Text;
         view.setText(infoString);
 		
-
+		var heartRateAverage = Sensor.Info.heartRate;
+		var heartRate = 0; // valore iniziale
+        var activity = Activity.Info.currentHeartRate;
+        Storage.setValue(heartRate, hrData);
+        System.println(Storage.getValue(heartRate));
+        
+        System.println(activity);
        // Get and show the current time
         //var clockTime = System.getClockTime();
         //var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
