@@ -5,7 +5,7 @@ import Toybox.PersistedContent;
 import Toybox.System;
 import Toybox.Sensor;
 import Toybox.Activity;
-import Toybox.Activity;
+import Toybox.ActivityRecording;
 
 class sensorsTestApp extends Application.AppBase {
 	
@@ -25,7 +25,7 @@ class sensorsTestApp extends Application.AppBase {
         //System.println(Storage.getValue(key));
         //Storage.setValue(key, "OK");
         //ActivityRecording.createSession(); //create a session object
-        var session = createSession();
+    	var session = createSession();
         
         
         
@@ -64,16 +64,16 @@ class sensorsTestApp extends Application.AppBase {
 
 function createSession() {
     var session = ActivityRecording.createSession({     // set up recording session
-        :name=>"Race",                                  // set session name
+        :name=>"Rana",                                // set session name
         :sport=>ActivityRecording.SPORT_GENERIC,        // set sport type
         :subSport=>ActivityRecording.SUB_SPORT_GENERIC, // set sub sport type
         :poolLength=> 50,
-        :autoLap=>{                                     // auto lap configuration
-            :type=>:lines,                              // auto lap using entry/exit lines
+        //:autoLap=>{                                     // auto lap configuration
+          //  :type=>:lines,                              // auto lap using entry/exit lines
             //:exit=>[loc1, loc2],                        // set exit of auto lap staging box (typically the finish line)
             //:entry=>[loc3, loc4],                       // set entrance of auto lap staging box (typically before the finish line)
-            :autoStart=>true                            // auto start using the entry/exit lines
-        }
+            //:autoStart=>true                            // auto start using the entry/exit lines
+        //}
     });
     return session;
 }
