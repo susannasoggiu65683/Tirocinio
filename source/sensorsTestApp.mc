@@ -25,7 +25,7 @@ class sensorsTestApp extends Application.AppBase {
         //System.println(Storage.getValue(key));
         //Storage.setValue(key, "OK");
         //ActivityRecording.createSession(); //create a session object
-    	var session = createSession();
+    	//var session = createSession();
         
         
         

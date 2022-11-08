@@ -24,7 +24,7 @@ class sensorsTestView extends WatchUi.WatchFace {
     function onSensor(sensorInfo as Sensor.Info) as Void {
     
     	hrData = sensorInfo.heartRate;
-    /**
+    
     	System.println( "Accelerometro: " + sensorInfo.accel);
     	//System.println( "Altitudine: " + sensorInfo.altitude);
     	System.println( "Cadenza: " + sensorInfo.cadence);
@@ -35,7 +35,7 @@ class sensorsTestView extends WatchUi.WatchFace {
     	System.println( "Potenza: " + sensorInfo.power);
     	System.println( "Pressione: " + sensorInfo.pressure);
     	System.println( "Temperatura: " + sensorInfo.temperature);
-	*/
+	
     	WatchUi.requestUpdate();
 	}
 	
@@ -56,19 +56,19 @@ class sensorsTestView extends WatchUi.WatchFace {
     	var infoString = "" + hrData;
     	var view = View.findDrawableById("TimeLabel") as Text;
         view.setText(infoString);
-		
+		/*
 		var heartRateAverage = Sensor.Info.heartRate;
 		var heartRate = 0; // valore iniziale
-        var activity = Activity.Info.currentHeartRate;
-        Storage.setValue(heartRate, hrData);
-        System.println(Storage.getValue(heartRate));
+        var heartRateActivity = Activity.Info.currentHeartRate;
+        Storage.setValue("battito", heartRateAverage);
+        System.println("Storage heart rate: " + Storage.getValue("battito"));
         
-        System.println(activity);
-       // Get and show the current time
-        //var clockTime = System.getClockTime();
-        //var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        //var view = View.findDrawableById("TimeLabel") as Text;
-        //view.setText(timeString);
+        System.println("HR avg: " + heartRateAverage);
+        System.println("HR activity: " + heartRateActivity);
+
+*/
+		Storage.setValue("battito", hrData);
+        System.println("Storage heart rate: " + Storage.getValue("battito"));
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
