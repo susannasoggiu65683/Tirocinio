@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\susyv\Desktop\betterSwim\betterSwim\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="1" lineNum="6" parent="globals/betterSwimDelegate" pc="268435456" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="1" lineNum="7" parent="globals/betterSwimDelegate" pc="268435460" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="2" lineNum="10" parent="globals/betterSwimDelegate" pc="268435479" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="2" lineNum="11" parent="globals/betterSwimDelegate" pc="268435483" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="2" lineNum="12" parent="globals/betterSwimDelegate" pc="268435567" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="3" lineNum="4" parent="globals/betterSwimDelegate" pc="268437038" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimDelegate.mc" id="3" lineNum="4" parent="globals/betterSwimDelegate" pc="268437038" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="5" lineNum="7" parent="globals/betterSwimMenuDelegate" pc="268435571" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="5" lineNum="8" parent="globals/betterSwimMenuDelegate" pc="268435575" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="6" lineNum="11" parent="globals/betterSwimMenuDelegate" pc="268435594" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="6" lineNum="12" parent="globals/betterSwimMenuDelegate" pc="268435598" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="6" lineNum="13" parent="globals/betterSwimMenuDelegate" pc="268435609" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="6" lineNum="14" parent="globals/betterSwimMenuDelegate" pc="268435633" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="6" lineNum="15" parent="globals/betterSwimMenuDelegate" pc="268435644" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="7" lineNum="5" parent="globals/betterSwimMenuDelegate" pc="268437106" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimMenuDelegate.mc" id="7" lineNum="5" parent="globals/betterSwimMenuDelegate" pc="268437106" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="9" lineNum="6" parent="globals/betterSwimApp" pc="268435669" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="9" lineNum="7" parent="globals/betterSwimApp" pc="268435673" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="9" lineNum="8" parent="globals/betterSwimApp" pc="268435691" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="9" lineNum="9" parent="globals/betterSwimApp" pc="268435759" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="10" lineNum="12" parent="globals/betterSwimApp" pc="268435794" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="11" lineNum="16" parent="globals/betterSwimApp" pc="268435799" symbol="onStart"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="12" lineNum="30" parent="globals/betterSwimApp" pc="268435804" symbol="onStop"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="13" lineNum="35" parent="globals/betterSwimApp" pc="268435809" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="13" lineNum="36" parent="globals/betterSwimApp" pc="268435813" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="14" lineNum="5" parent="globals/betterSwimApp" pc="268437000" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="14" lineNum="5" parent="globals/betterSwimApp" pc="268437000" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="15" lineNum="41" parent="globals" pc="268435881" symbol="getApp"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="15" lineNum="42" parent="globals" pc="268435893" symbol="getApp"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="16" lineNum="46" parent="globals" pc="268435910" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="16" lineNum="48" parent="globals" pc="268435922" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="16" lineNum="49" parent="globals" pc="268435941" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="16" lineNum="51" parent="globals" pc="268435954" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="16" lineNum="54" parent="globals" pc="268435961" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="17" lineNum="58" parent="globals" pc="268435994" symbol="createSession"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="17" lineNum="59" parent="globals" pc="268436006" symbol="createSession"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimApp.mc" id="17" lineNum="71" parent="globals" pc="268436101" symbol="createSession"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="19" lineNum="15" parent="globals/betterSwimView" pc="268436105" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="19" lineNum="16" parent="globals/betterSwimView" pc="268436109" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="19" lineNum="17" parent="globals/betterSwimView" pc="268436127" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="19" lineNum="18" parent="globals/betterSwimView" pc="268436189" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="21" parent="globals/betterSwimView" pc="268436222" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="23" parent="globals/betterSwimView" pc="268436226" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="25" parent="globals/betterSwimView" pc="268436242" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="27" parent="globals/betterSwimView" pc="268436272" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="29" parent="globals/betterSwimView" pc="268436302" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="30" parent="globals/betterSwimView" pc="268436332" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="32" parent="globals/betterSwimView" pc="268436362" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="33" parent="globals/betterSwimView" pc="268436392" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="34" parent="globals/betterSwimView" pc="268436422" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="20" lineNum="36" parent="globals/betterSwimView" pc="268436452" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="21" lineNum="40" parent="globals/betterSwimView" pc="268436469" symbol="onLayout"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="21" lineNum="41" parent="globals/betterSwimView" pc="268436473" symbol="onLayout"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="22" lineNum="47" parent="globals/betterSwimView" pc="268436511" symbol="onShow"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="51" parent="globals/betterSwimView" pc="268436516" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="52" parent="globals/betterSwimView" pc="268436520" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="53" parent="globals/betterSwimView" pc="268436536" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="54" parent="globals/betterSwimView" pc="268436560" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="67" parent="globals/betterSwimView" pc="268436574" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="68" parent="globals/betterSwimView" pc="268436603" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="23" lineNum="71" parent="globals/betterSwimView" pc="268436645" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="24" lineNum="77" parent="globals/betterSwimView" pc="268436666" symbol="onHide"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="25" lineNum="11" parent="globals/betterSwimView" pc="268437019" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\betterSwim\\betterSwim\\source\\betterSwimView.mc" id="25" lineNum="11" parent="globals/betterSwimView" pc="268437019" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="2" parent="globals/Rez/Drawables" pc="268437081" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="28" lineNum="6" parent="globals/Rez/Fonts" pc="268437102" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="8" parent="globals/Rez/JsonData" pc="268437104" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="30" lineNum="17" parent="globals/Rez/Layouts" pc="268436671" symbol="WatchFace"/>
+        <entry filename="Rez" id="30" lineNum="19" parent="globals/Rez/Layouts" pc="268436683" symbol="WatchFace"/>
+        <entry filename="Rez" id="30" lineNum="21" parent="globals/Rez/Layouts" pc="268436846" symbol="WatchFace"/>
+        <entry filename="Rez" id="31" lineNum="10" parent="globals/Rez/Layouts" pc="268437103" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="32" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268436864" symbol="initialize"/>
+        <entry filename="Rez" id="32" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436868" symbol="initialize"/>
+        <entry filename="Rez" id="32" lineNum="37" parent="globals/Rez/Menus/MainMenu" pc="268436886" symbol="initialize"/>
+        <entry filename="Rez" id="32" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436942" symbol="initialize"/>
+        <entry filename="Rez" id="33" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437083" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437083" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="34" lineNum="26" parent="globals/Rez/Menus" pc="268437082" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="35" lineNum="44" parent="globals/Rez/Strings" pc="268437105" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="36" lineNum="1" parent="globals/Rez" pc="268437057" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="36" lineNum="1" parent="globals/Rez" pc="268437057" symbol="&lt;init&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="12" method="true" symbol="example"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry id="8390424" module="true" symbol="Storage"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="23" symbol="AppName"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="22" symbol="prompt"/>
+        <entry id="13" object="true" symbol="betterSwimView"/>
+        <entry field="true" id="15" symbol="hrData"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="25" symbol="item_2"/>
+        <entry id="24" symbol="item_1"/>
+        <entry id="17" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8390688" symbol="poolLength"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="10" object="true" symbol="betterSwimMenuDelegate"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="8388877" method="true" symbol="createSession"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="19" object="true" symbol="MainMenu"/>
+        <entry id="9" object="true" symbol="betterSwimDelegate"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="11" object="true" symbol="betterSwimApp"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="14" method="true" symbol="onSensor"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="18" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8388643" module="true" symbol="Sensor"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="8388891" symbol="subSport"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="16" module="true" symbol="Layouts"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="21" symbol="menu_label_2"/>
+        <entry field="true" id="20" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435668" name="item" stackId="1" startPc="268435594"/>
+        <entry arg="true" endPc="268435798" name="sensorInfo" stackId="1" startPc="268435794"/>
+        <entry arg="true" endPc="268435803" name="state" stackId="1" startPc="268435799"/>
+        <entry arg="true" endPc="268435808" name="state" stackId="1" startPc="268435804"/>
+        <entry endPc="268435992" name="waypoint" stackId="2" startPc="268435922"/>
+        <entry endPc="268435992" name="waypoints" stackId="1" startPc="268435922"/>
+        <entry endPc="268436103" name="session" stackId="1" startPc="268436006"/>
+        <entry arg="true" endPc="268436468" name="sensorInfo" stackId="1" startPc="268436222"/>
+        <entry arg="true" endPc="268436510" name="dc" stackId="1" startPc="268436469"/>
+        <entry endPc="268436664" name="view" stackId="3" startPc="268436520"/>
+        <entry endPc="268436664" name="infoString" stackId="2" startPc="268436520"/>
+        <entry arg="true" endPc="268436665" name="dc" stackId="1" startPc="268436516"/>
+        <entry endPc="268436862" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436683"/>
+        <entry arg="true" endPc="268436863" name="dc" stackId="1" startPc="268436671"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/betterSwimApp" offset="190" parentId="globals" symbolId="betterSwimApp" type="class"/>
+        <dataEntry label="globals/betterSwimView" offset="269" parentId="globals" symbolId="betterSwimView" type="class"/>
+        <dataEntry label="globals/betterSwimDelegate" offset="364" parentId="globals" symbolId="betterSwimDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="419" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="498" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="537" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="576" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="623" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="654" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="693" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="724" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/betterSwimMenuDelegate" offset="787" parentId="globals" symbolId="betterSwimMenuDelegate" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="betterSwimDelegate" startPc="268435456">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435570" name="onMenu" parent="betterSwimDelegate" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437056" name="&lt;init&gt;" parent="betterSwimDelegate" startPc="268437038">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435593" name="initialize" parent="betterSwimMenuDelegate" startPc="268435571">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435668" name="onMenuItem" parent="betterSwimMenuDelegate" startPc="268435594">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437124" name="&lt;init&gt;" parent="betterSwimMenuDelegate" startPc="268437106">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435793" name="initialize" parent="betterSwimApp" startPc="268435669">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435798" name="onSensor" parent="betterSwimApp" startPc="268435794">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435803" name="onStart" parent="betterSwimApp" startPc="268435799">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435808" name="onStop" parent="betterSwimApp" startPc="268435804">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435880" name="getInitialView" parent="betterSwimApp" startPc="268435809">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437018" name="&lt;init&gt;" parent="betterSwimApp" startPc="268437000">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435909" name="getApp" startPc="268435881">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435993" name="example" startPc="268435910">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436104" name="createSession" startPc="268435994">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436221" name="initialize" parent="betterSwimView" startPc="268436105">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436468" name="onSensor" parent="betterSwimView" startPc="268436222">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436510" name="onLayout" parent="betterSwimView" startPc="268436469">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436515" name="onShow" parent="betterSwimView" startPc="268436511">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436665" name="onUpdate" parent="betterSwimView" startPc="268436516">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436670" name="onHide" parent="betterSwimView" startPc="268436666">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437037" name="&lt;init&gt;" parent="betterSwimView" startPc="268437019">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437081" name="&lt;init&gt;" parent="Drawables" startPc="268437081">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437102" name="&lt;init&gt;" parent="Fonts" startPc="268437102">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437104" name="&lt;init&gt;" parent="JsonData" startPc="268437104">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436863" name="WatchFace" parent="Layouts" startPc="268436671">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437103" name="&lt;init&gt;" parent="Layouts" startPc="268437103">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436998" name="initialize" parent="MainMenu" startPc="268436864">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437101" name="&lt;init&gt;" parent="MainMenu" startPc="268437083">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437082" name="&lt;init&gt;" parent="Menus" startPc="268437082">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437105" name="&lt;init&gt;" parent="Strings" startPc="268437105">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268437080" name="&lt;init&gt;" parent="Rez" startPc="268437057">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

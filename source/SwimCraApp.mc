@@ -1,16 +1,9 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
-import Toybox.PersistedContent;
-import Toybox.System;
-import Toybox.Sensor;
-import Toybox.Activity;
-import Toybox.ActivityRecording;
 
-class sensorsTestApp extends Application.AppBase {
-	
-	
-    function initialize() {
+class SwimCraApp extends Application.AppBase {
+function initialize() {
         AppBase.initialize();
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
         Sensor.enableSensorEvents( method( :onSensor ) );
@@ -40,7 +33,7 @@ class sensorsTestApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new sensorsTestView(), new sensorsTestDelegate() ] as Array<Views or InputDelegates>;
+        return [ new SwimCraView(), new SwimCraDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }
