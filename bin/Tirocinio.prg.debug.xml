@@ -2,94 +2,98 @@
 <debugInfo>
     <manifest filename="C:\Users\susyv\Desktop\Tirocinio\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="15" parent="globals/SwimCraView" pc="268435456" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="16" parent="globals/SwimCraView" pc="268435460" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="17" parent="globals/SwimCraView" pc="268435478" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="18" parent="globals/SwimCraView" pc="268435540" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="21" parent="globals/SwimCraView" pc="268435573" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="23" parent="globals/SwimCraView" pc="268435577" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="25" parent="globals/SwimCraView" pc="268435593" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="27" parent="globals/SwimCraView" pc="268435623" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="29" parent="globals/SwimCraView" pc="268435653" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="30" parent="globals/SwimCraView" pc="268435683" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="32" parent="globals/SwimCraView" pc="268435713" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="33" parent="globals/SwimCraView" pc="268435743" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="34" parent="globals/SwimCraView" pc="268435773" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="36" parent="globals/SwimCraView" pc="268435803" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="3" lineNum="40" parent="globals/SwimCraView" pc="268435820" symbol="onLayout"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="3" lineNum="41" parent="globals/SwimCraView" pc="268435824" symbol="onLayout"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="4" lineNum="47" parent="globals/SwimCraView" pc="268435862" symbol="onShow"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="51" parent="globals/SwimCraView" pc="268435867" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="52" parent="globals/SwimCraView" pc="268435871" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="53" parent="globals/SwimCraView" pc="268435887" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="54" parent="globals/SwimCraView" pc="268435911" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="67" parent="globals/SwimCraView" pc="268435925" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="68" parent="globals/SwimCraView" pc="268435954" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="71" parent="globals/SwimCraView" pc="268435996" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="6" lineNum="77" parent="globals/SwimCraView" pc="268436017" symbol="onHide"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="11" parent="globals/SwimCraView" pc="268437106" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="11" parent="globals/SwimCraView" pc="268437106" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="9" lineNum="6" parent="globals/SwimCraDelegate" pc="268436022" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="9" lineNum="7" parent="globals/SwimCraDelegate" pc="268436026" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="10" lineNum="10" parent="globals/SwimCraDelegate" pc="268436045" symbol="onMenu"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="10" lineNum="11" parent="globals/SwimCraDelegate" pc="268436049" symbol="onMenu"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="10" lineNum="12" parent="globals/SwimCraDelegate" pc="268436133" symbol="onMenu"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="11" lineNum="4" parent="globals/SwimCraDelegate" pc="268437000" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="11" lineNum="4" parent="globals/SwimCraDelegate" pc="268437000" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="13" lineNum="7" parent="globals/SwimCraMenuDelegate" pc="268436137" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="13" lineNum="8" parent="globals/SwimCraMenuDelegate" pc="268436141" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="11" parent="globals/SwimCraMenuDelegate" pc="268436160" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="12" parent="globals/SwimCraMenuDelegate" pc="268436164" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="13" parent="globals/SwimCraMenuDelegate" pc="268436175" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="14" parent="globals/SwimCraMenuDelegate" pc="268436199" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="15" parent="globals/SwimCraMenuDelegate" pc="268436210" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="5" parent="globals/SwimCraMenuDelegate" pc="268437087" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="5" parent="globals/SwimCraMenuDelegate" pc="268437087" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="17" lineNum="6" parent="globals/SwimCraApp" pc="268436235" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="17" lineNum="7" parent="globals/SwimCraApp" pc="268436239" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="17" lineNum="8" parent="globals/SwimCraApp" pc="268436257" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="17" lineNum="9" parent="globals/SwimCraApp" pc="268436325" symbol="initialize"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="18" lineNum="12" parent="globals/SwimCraApp" pc="268436360" symbol="onSensor"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="19" lineNum="16" parent="globals/SwimCraApp" pc="268436365" symbol="onStart"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="20" lineNum="30" parent="globals/SwimCraApp" pc="268436370" symbol="onStop"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="21" lineNum="35" parent="globals/SwimCraApp" pc="268436375" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="21" lineNum="36" parent="globals/SwimCraApp" pc="268436379" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="22" lineNum="5" parent="globals/SwimCraApp" pc="268437068" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="22" lineNum="5" parent="globals/SwimCraApp" pc="268437068" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="23" lineNum="41" parent="globals" pc="268436447" symbol="getApp"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="23" lineNum="42" parent="globals" pc="268436459" symbol="getApp"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="46" parent="globals" pc="268436476" symbol="example"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="48" parent="globals" pc="268436488" symbol="example"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="49" parent="globals" pc="268436507" symbol="example"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="51" parent="globals" pc="268436520" symbol="example"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="54" parent="globals" pc="268436527" symbol="example"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="58" parent="globals" pc="268436560" symbol="createSession"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="59" parent="globals" pc="268436572" symbol="createSession"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="71" parent="globals" pc="268436667" symbol="createSession"/>
-        <entry filename="Rez" id="27" lineNum="2" parent="globals/Rez/Drawables" pc="268437043" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="28" lineNum="6" parent="globals/Rez/Fonts" pc="268437064" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="8" parent="globals/Rez/JsonData" pc="268437066" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="30" lineNum="17" parent="globals/Rez/Layouts" pc="268436671" symbol="WatchFace"/>
-        <entry filename="Rez" id="30" lineNum="19" parent="globals/Rez/Layouts" pc="268436683" symbol="WatchFace"/>
-        <entry filename="Rez" id="30" lineNum="21" parent="globals/Rez/Layouts" pc="268436846" symbol="WatchFace"/>
-        <entry filename="Rez" id="31" lineNum="10" parent="globals/Rez/Layouts" pc="268437065" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="32" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268436864" symbol="initialize"/>
-        <entry filename="Rez" id="32" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436868" symbol="initialize"/>
-        <entry filename="Rez" id="32" lineNum="37" parent="globals/Rez/Menus/MainMenu" pc="268436886" symbol="initialize"/>
-        <entry filename="Rez" id="32" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436942" symbol="initialize"/>
-        <entry filename="Rez" id="33" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437045" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="33" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437045" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="34" lineNum="26" parent="globals/Rez/Menus" pc="268437044" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="35" lineNum="44" parent="globals/Rez/Strings" pc="268437067" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="36" lineNum="1" parent="globals/Rez" pc="268437019" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="36" lineNum="1" parent="globals/Rez" pc="268437019" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="23" parent="globals/SwimCraView" pc="268435456" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="24" parent="globals/SwimCraView" pc="268435460" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="25" parent="globals/SwimCraView" pc="268435478" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="26" parent="globals/SwimCraView" pc="268435540" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="30" parent="globals/SwimCraView" pc="268435572" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="1" lineNum="37" parent="globals/SwimCraView" pc="268435665" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="40" parent="globals/SwimCraView" pc="268435689" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="42" parent="globals/SwimCraView" pc="268435693" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="2" lineNum="55" parent="globals/SwimCraView" pc="268435709" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="3" lineNum="59" parent="globals/SwimCraView" pc="268435726" symbol="onLayout"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="3" lineNum="60" parent="globals/SwimCraView" pc="268435730" symbol="onLayout"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="4" lineNum="66" parent="globals/SwimCraView" pc="268435768" symbol="onShow"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="70" parent="globals/SwimCraView" pc="268435773" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="71" parent="globals/SwimCraView" pc="268435777" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="72" parent="globals/SwimCraView" pc="268435793" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="73" parent="globals/SwimCraView" pc="268435817" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="86" parent="globals/SwimCraView" pc="268435831" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="87" parent="globals/SwimCraView" pc="268435860" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="88" parent="globals/SwimCraView" pc="268435902" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="5" lineNum="91" parent="globals/SwimCraView" pc="268435926" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="6" lineNum="97" parent="globals/SwimCraView" pc="268435947" symbol="onHide"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="102" parent="globals/SwimCraView" pc="268435952" symbol="compute"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="103" parent="globals/SwimCraView" pc="268435956" symbol="compute"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="105" parent="globals/SwimCraView" pc="268435979" symbol="compute"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="106" parent="globals/SwimCraView" pc="268436013" symbol="compute"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="7" lineNum="109" parent="globals/SwimCraView" pc="268436042" symbol="compute"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="8" lineNum="14" parent="globals/SwimCraView" pc="268437136" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraView.mc" id="8" lineNum="14" parent="globals/SwimCraView" pc="268437136" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="10" lineNum="6" parent="globals/SwimCraDelegate" pc="268436052" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="10" lineNum="7" parent="globals/SwimCraDelegate" pc="268436056" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="11" lineNum="10" parent="globals/SwimCraDelegate" pc="268436075" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="11" lineNum="11" parent="globals/SwimCraDelegate" pc="268436079" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="11" lineNum="12" parent="globals/SwimCraDelegate" pc="268436163" symbol="onMenu"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="12" lineNum="4" parent="globals/SwimCraDelegate" pc="268437030" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="12" lineNum="4" parent="globals/SwimCraDelegate" pc="268437030" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="7" parent="globals/SwimCraMenuDelegate" pc="268436167" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="14" lineNum="8" parent="globals/SwimCraMenuDelegate" pc="268436171" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="11" parent="globals/SwimCraMenuDelegate" pc="268436190" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="12" parent="globals/SwimCraMenuDelegate" pc="268436194" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="13" parent="globals/SwimCraMenuDelegate" pc="268436205" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="14" parent="globals/SwimCraMenuDelegate" pc="268436229" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="15" lineNum="15" parent="globals/SwimCraMenuDelegate" pc="268436240" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="16" lineNum="5" parent="globals/SwimCraMenuDelegate" pc="268437117" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraMenuDelegate.mc" id="16" lineNum="5" parent="globals/SwimCraMenuDelegate" pc="268437117" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="18" lineNum="7" parent="globals/SwimCraApp" pc="268436265" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="18" lineNum="8" parent="globals/SwimCraApp" pc="268436269" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="18" lineNum="9" parent="globals/SwimCraApp" pc="268436287" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="18" lineNum="10" parent="globals/SwimCraApp" pc="268436355" symbol="initialize"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="19" lineNum="13" parent="globals/SwimCraApp" pc="268436390" symbol="onSensor"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="20" lineNum="17" parent="globals/SwimCraApp" pc="268436395" symbol="onStart"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="21" lineNum="31" parent="globals/SwimCraApp" pc="268436400" symbol="onStop"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="22" lineNum="36" parent="globals/SwimCraApp" pc="268436405" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="22" lineNum="37" parent="globals/SwimCraApp" pc="268436409" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="23" lineNum="6" parent="globals/SwimCraApp" pc="268437098" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="23" lineNum="6" parent="globals/SwimCraApp" pc="268437098" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="42" parent="globals" pc="268436477" symbol="getApp"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="24" lineNum="43" parent="globals" pc="268436489" symbol="getApp"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="47" parent="globals" pc="268436506" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="49" parent="globals" pc="268436518" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="50" parent="globals" pc="268436537" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="52" parent="globals" pc="268436550" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="25" lineNum="55" parent="globals" pc="268436557" symbol="example"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="26" lineNum="59" parent="globals" pc="268436590" symbol="createSession"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="26" lineNum="60" parent="globals" pc="268436602" symbol="createSession"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraApp.mc" id="26" lineNum="72" parent="globals" pc="268436697" symbol="createSession"/>
+        <entry filename="Rez" id="28" lineNum="2" parent="globals/Rez/Drawables" pc="268437073" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="6" parent="globals/Rez/Fonts" pc="268437094" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="30" lineNum="8" parent="globals/Rez/JsonData" pc="268437096" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="31" lineNum="17" parent="globals/Rez/Layouts" pc="268436701" symbol="WatchFace"/>
+        <entry filename="Rez" id="31" lineNum="19" parent="globals/Rez/Layouts" pc="268436713" symbol="WatchFace"/>
+        <entry filename="Rez" id="31" lineNum="21" parent="globals/Rez/Layouts" pc="268436876" symbol="WatchFace"/>
+        <entry filename="Rez" id="32" lineNum="10" parent="globals/Rez/Layouts" pc="268437095" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268436894" symbol="initialize"/>
+        <entry filename="Rez" id="33" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436898" symbol="initialize"/>
+        <entry filename="Rez" id="33" lineNum="37" parent="globals/Rez/Menus/MainMenu" pc="268436916" symbol="initialize"/>
+        <entry filename="Rez" id="33" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436972" symbol="initialize"/>
+        <entry filename="Rez" id="34" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437075" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="34" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437075" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="35" lineNum="26" parent="globals/Rez/Menus" pc="268437074" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="36" lineNum="44" parent="globals/Rez/Strings" pc="268437097" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="37" lineNum="1" parent="globals/Rez" pc="268437049" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="37" lineNum="1" parent="globals/Rez" pc="268437049" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="8389849" symbol="units"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
         <entry id="13" method="true" symbol="example"/>
         <entry field="true" id="8388890" symbol="sport"/>
+        <entry field="true" id="23" symbol="bananasEarnedField"/>
         <entry id="8390424" module="true" symbol="Storage"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="21" symbol="AppName"/>
@@ -100,15 +104,15 @@
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry field="true" id="20" symbol="prompt"/>
-        <entry field="true" id="23" symbol="hrData"/>
+        <entry field="true" id="27" symbol="hrData"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="25" symbol="item_2"/>
-        <entry id="24" symbol="item_1"/>
+        <entry id="29" symbol="item_2"/>
+        <entry id="28" symbol="item_1"/>
         <entry id="15" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
@@ -116,6 +120,8 @@
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8390688" symbol="poolLength"/>
         <entry id="8389349" symbol="justification"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry field="true" id="26" symbol="BANANAS_FIELD_ID"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="8388877" method="true" symbol="createSession"/>
         <entry id="11" object="true" symbol="SwimCraMenuDelegate"/>
@@ -123,9 +129,11 @@
         <entry id="17" object="true" symbol="MainMenu"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="24" symbol="totalBananas"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="22" method="true" symbol="onSensor"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="25" symbol="CALORIES_PER_BANANA"/>
         <entry field="true" id="16" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
@@ -135,12 +143,14 @@
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry field="true" id="8388891" symbol="subSport"/>
+        <entry id="8389780" module="true" symbol="FitContributor"/>
         <entry field="true" id="8388892" symbol="name"/>
         <entry id="12" object="true" symbol="SwimCraApp"/>
         <entry id="9" object="true" symbol="SwimCraView"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="8389847" symbol="mesgType"/>
         <entry id="8389347" symbol="color"/>
         <entry id="8388646" module="true" object="true" symbol="Timer"/>
         <entry id="14" module="true" symbol="Layouts"/>
@@ -152,20 +162,21 @@
         <entry field="true" id="18" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435819" name="sensorInfo" stackId="1" startPc="268435573"/>
-        <entry arg="true" endPc="268435861" name="dc" stackId="1" startPc="268435820"/>
-        <entry endPc="268436015" name="view" stackId="3" startPc="268435871"/>
-        <entry endPc="268436015" name="infoString" stackId="2" startPc="268435871"/>
-        <entry arg="true" endPc="268436016" name="dc" stackId="1" startPc="268435867"/>
-        <entry arg="true" endPc="268436234" name="item" stackId="1" startPc="268436160"/>
-        <entry arg="true" endPc="268436364" name="sensorInfo" stackId="1" startPc="268436360"/>
-        <entry arg="true" endPc="268436369" name="state" stackId="1" startPc="268436365"/>
-        <entry arg="true" endPc="268436374" name="state" stackId="1" startPc="268436370"/>
-        <entry endPc="268436558" name="waypoint" stackId="2" startPc="268436488"/>
-        <entry endPc="268436558" name="waypoints" stackId="1" startPc="268436488"/>
-        <entry endPc="268436669" name="session" stackId="1" startPc="268436572"/>
-        <entry endPc="268436862" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436683"/>
-        <entry arg="true" endPc="268436863" name="dc" stackId="1" startPc="268436671"/>
+        <entry arg="true" endPc="268435725" name="sensorInfo" stackId="1" startPc="268435689"/>
+        <entry arg="true" endPc="268435767" name="dc" stackId="1" startPc="268435726"/>
+        <entry endPc="268435945" name="view" stackId="3" startPc="268435777"/>
+        <entry endPc="268435945" name="infoString" stackId="2" startPc="268435777"/>
+        <entry arg="true" endPc="268435946" name="dc" stackId="1" startPc="268435773"/>
+        <entry arg="true" endPc="268436051" name="info" stackId="1" startPc="268435952"/>
+        <entry arg="true" endPc="268436264" name="item" stackId="1" startPc="268436190"/>
+        <entry arg="true" endPc="268436394" name="sensorInfo" stackId="1" startPc="268436390"/>
+        <entry arg="true" endPc="268436399" name="state" stackId="1" startPc="268436395"/>
+        <entry arg="true" endPc="268436404" name="state" stackId="1" startPc="268436400"/>
+        <entry endPc="268436588" name="waypoint" stackId="2" startPc="268436518"/>
+        <entry endPc="268436588" name="waypoints" stackId="1" startPc="268436518"/>
+        <entry endPc="268436699" name="session" stackId="1" startPc="268436602"/>
+        <entry endPc="268436892" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436713"/>
+        <entry arg="true" endPc="268436893" name="dc" stackId="1" startPc="268436701"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -190,108 +201,112 @@
         <dataEntry label="globals/SwimCraView" offset="747" parentId="globals" symbolId="SwimCraView" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435572" name="initialize" parent="SwimCraView" startPc="268435456">
+        <functionEntry accessMode="public" endPc="268435688" name="initialize" parent="SwimCraView" startPc="268435456">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435819" name="onSensor" parent="SwimCraView" startPc="268435573">
+        <functionEntry accessMode="public" endPc="268435725" name="onSensor" parent="SwimCraView" startPc="268435689">
             <param id="sensorInfo"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435861" name="onLayout" parent="SwimCraView" startPc="268435820">
+        <functionEntry accessMode="public" endPc="268435767" name="onLayout" parent="SwimCraView" startPc="268435726">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435866" name="onShow" parent="SwimCraView" startPc="268435862">
+        <functionEntry accessMode="public" endPc="268435772" name="onShow" parent="SwimCraView" startPc="268435768">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436016" name="onUpdate" parent="SwimCraView" startPc="268435867">
+        <functionEntry accessMode="public" endPc="268435946" name="onUpdate" parent="SwimCraView" startPc="268435773">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436021" name="onHide" parent="SwimCraView" startPc="268436017">
+        <functionEntry accessMode="public" endPc="268435951" name="onHide" parent="SwimCraView" startPc="268435947">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437124" name="&lt;init&gt;" parent="SwimCraView" startPc="268437106">
+        <functionEntry accessMode="public" endPc="268436051" name="compute" parent="SwimCraView" startPc="268435952">
+            <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436044" name="initialize" parent="SwimCraDelegate" startPc="268436022">
+        <functionEntry accessMode="protected" endPc="268437154" name="&lt;init&gt;" parent="SwimCraView" startPc="268437136">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436136" name="onMenu" parent="SwimCraDelegate" startPc="268436045">
+        <functionEntry accessMode="public" endPc="268436074" name="initialize" parent="SwimCraDelegate" startPc="268436052">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437018" name="&lt;init&gt;" parent="SwimCraDelegate" startPc="268437000">
+        <functionEntry accessMode="public" endPc="268436166" name="onMenu" parent="SwimCraDelegate" startPc="268436075">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436159" name="initialize" parent="SwimCraMenuDelegate" startPc="268436137">
+        <functionEntry accessMode="protected" endPc="268437048" name="&lt;init&gt;" parent="SwimCraDelegate" startPc="268437030">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436234" name="onMenuItem" parent="SwimCraMenuDelegate" startPc="268436160">
+        <functionEntry accessMode="public" endPc="268436189" name="initialize" parent="SwimCraMenuDelegate" startPc="268436167">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436264" name="onMenuItem" parent="SwimCraMenuDelegate" startPc="268436190">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437105" name="&lt;init&gt;" parent="SwimCraMenuDelegate" startPc="268437087">
+        <functionEntry accessMode="protected" endPc="268437135" name="&lt;init&gt;" parent="SwimCraMenuDelegate" startPc="268437117">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436359" name="initialize" parent="SwimCraApp" startPc="268436235">
+        <functionEntry accessMode="public" endPc="268436389" name="initialize" parent="SwimCraApp" startPc="268436265">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436364" name="onSensor" parent="SwimCraApp" startPc="268436360">
+        <functionEntry accessMode="public" endPc="268436394" name="onSensor" parent="SwimCraApp" startPc="268436390">
             <param id="sensorInfo"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436369" name="onStart" parent="SwimCraApp" startPc="268436365">
+        <functionEntry accessMode="public" endPc="268436399" name="onStart" parent="SwimCraApp" startPc="268436395">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436374" name="onStop" parent="SwimCraApp" startPc="268436370">
+        <functionEntry accessMode="public" endPc="268436404" name="onStop" parent="SwimCraApp" startPc="268436400">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436446" name="getInitialView" parent="SwimCraApp" startPc="268436375">
+        <functionEntry accessMode="public" endPc="268436476" name="getInitialView" parent="SwimCraApp" startPc="268436405">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437086" name="&lt;init&gt;" parent="SwimCraApp" startPc="268437068">
+        <functionEntry accessMode="protected" endPc="268437116" name="&lt;init&gt;" parent="SwimCraApp" startPc="268437098">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436475" name="getApp" startPc="268436447">
+        <functionEntry accessMode="public" endPc="268436505" name="getApp" startPc="268436477">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436559" name="example" startPc="268436476">
+        <functionEntry accessMode="public" endPc="268436589" name="example" startPc="268436506">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436670" name="createSession" startPc="268436560">
+        <functionEntry accessMode="public" endPc="268436700" name="createSession" startPc="268436590">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437043" name="&lt;init&gt;" parent="Drawables" startPc="268437043">
+        <functionEntry accessMode="protected" endPc="268437073" name="&lt;init&gt;" parent="Drawables" startPc="268437073">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437064" name="&lt;init&gt;" parent="Fonts" startPc="268437064">
+        <functionEntry accessMode="protected" endPc="268437094" name="&lt;init&gt;" parent="Fonts" startPc="268437094">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437066" name="&lt;init&gt;" parent="JsonData" startPc="268437066">
+        <functionEntry accessMode="protected" endPc="268437096" name="&lt;init&gt;" parent="JsonData" startPc="268437096">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436863" name="WatchFace" parent="Layouts" startPc="268436671">
+        <functionEntry accessMode="public" endPc="268436893" name="WatchFace" parent="Layouts" startPc="268436701">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437065" name="&lt;init&gt;" parent="Layouts" startPc="268437065">
+        <functionEntry accessMode="protected" endPc="268437095" name="&lt;init&gt;" parent="Layouts" startPc="268437095">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436998" name="initialize" parent="MainMenu" startPc="268436864">
+        <functionEntry accessMode="public" endPc="268437028" name="initialize" parent="MainMenu" startPc="268436894">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437063" name="&lt;init&gt;" parent="MainMenu" startPc="268437045">
+        <functionEntry accessMode="protected" endPc="268437093" name="&lt;init&gt;" parent="MainMenu" startPc="268437075">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437044" name="&lt;init&gt;" parent="Menus" startPc="268437044">
+        <functionEntry accessMode="protected" endPc="268437074" name="&lt;init&gt;" parent="Menus" startPc="268437074">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437067" name="&lt;init&gt;" parent="Strings" startPc="268437067">
+        <functionEntry accessMode="protected" endPc="268437097" name="&lt;init&gt;" parent="Strings" startPc="268437097">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437042" name="&lt;init&gt;" parent="Rez" startPc="268437019">
+        <functionEntry accessMode="protected" endPc="268437072" name="&lt;init&gt;" parent="Rez" startPc="268437049">
             <documentation/>
         </functionEntry>
     </functions>

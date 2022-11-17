@@ -1,6 +1,7 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.FitContributor;
 
 class SwimCraApp extends Application.AppBase {
 function initialize() {
