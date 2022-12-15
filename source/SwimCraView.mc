@@ -16,6 +16,11 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
 	var heartRateField = null;
     var avgHeartRate = 0;
 
+    // Store the iterator info in a variable. The options are 'null' in
+    // this case so the entire available history is returned with the
+    // newest samples returned first.
+    var sensorIter = getIterator();
+
     const HR_FIELD_ID = 0;
 
 	var hrData;
@@ -58,6 +63,10 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        // Print out the next entry in the iterator
+        if (sensorIter != null) {
+            System.println(sensorIter.next().data);
+        }
         /**
     	var infoString = "" + hrData;
     	var view = View.findDrawableById("TimeLabel") as Text;
@@ -100,6 +109,15 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
             }
         }
         WatchUi.requestUpdate();
+    }
+
+    // Create a method to get the SensorHistoryIterator object
+    function getIterator() {
+        // Check device for SensorHistory compatibility
+        if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getElevationHistory)) {
+            return Toybox.SensorHistory.getElevationHistory({});
+        }
+        return null;
     }
 
 }

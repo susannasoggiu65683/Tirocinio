@@ -1,9 +1,17 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.Communications;
+import Toybox.Sensor;
+import Toybox.SensorHistory;
+import Toybox.System;
 
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var _notify as Method(args as Dictionary or String or Null) as Void;
+
+    // Store the iterator info in a variable. The options are 'null' in
+    // this case so the entire available history is returned with the
+    // newest samples returned first.
+    var sensorIter = getIterator();
 
     //! Set up the callback to the view
     //! @param handler Callback method for when data is received
@@ -28,11 +36,9 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     //! Make the web request
     private function makeRequest() as Void {
         _notify.invoke("Executing\nRequest");
-
+        
         var myDict = {
-            "One" => 1,
-            "Two" => 2,
-            "Three" => 3
+            "Elevation" => sensorIter.next().data
         };
 
         var options = {
@@ -64,4 +70,14 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             _notify.invoke("Failed to load\nError: " + responseCode.toString());
         }
     }
+
+    // Create a method to get the SensorHistoryIterator object
+    function getIterator() {
+        // Check device for SensorHistory compatibility
+        if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getElevationHistory)) {
+            return Toybox.SensorHistory.getElevationHistory({});
+        }
+        return null;
+    }
+    
 }
