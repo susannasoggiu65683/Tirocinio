@@ -20,9 +20,6 @@ function initialize() {
         //Storage.setValue(key, "OK");
         //ActivityRecording.createSession(); //create a session object
     	//var session = createSession();
-        
-        
-        
         //onAppUpdate()
         //example();
     }
@@ -34,14 +31,13 @@ function initialize() {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new SwimCraView(), new SwimCraDelegate() ] as Array<Views or InputDelegates>;
+        var view = new $.SwimCraView();
+        var delegate = new $.SwimCraDelegate(view.method(:onReceive));
+        return [view, delegate] as Array<Views or InputDelegates>;
     }
 
 }
 
-	function getApp() as sensorsTestApp {
-	    return Application.getApp() as sensorsTestApp;
-	}
 	
 	
 	function example() as Void {

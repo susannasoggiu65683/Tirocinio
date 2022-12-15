@@ -2,57 +2,47 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.Sensor;
+import Toybox.SensorHistory;
 import Toybox.System;
 import Toybox.Timer;
 import Toybox.Activity;
 import Toybox.ActivityRecording;
 import Toybox.FitContributor;
 
-
 using Toybox.Application.Storage;
 
-class SwimCraView extends WatchUi.WatchFace {
-	var bananasEarnedField = null;
-    var totalBananas = 0.0;
+class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
+    private var _message as String = "Press menu or\nselect button";
+	var heartRateField = null;
+    var avgHeartRate = 0;
 
-    const CALORIES_PER_BANANA = 105.0;
-    const BANANAS_FIELD_ID = 0;
+    const HR_FIELD_ID = 0;
 
 	var hrData;
 
     function initialize() {
-        WatchFace.initialize();
+        //WatchFace.initialize();
+        WatchUi.View.initialize();
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
 
-        
+        /**
         // Create the custom FIT data field we want to record.
-        bananasEarnedField = WatchUi.SimpleDataField.createField(
-            "bananas_earned",
-            BANANAS_FIELD_ID,
-            FitContributor.DATA_TYPE_FLOAT,
+        heartRateField = WatchUi.SimpleDataField.createField(
+            "average_heart_rate",
+            HR_FIELD_ID,
+            FitContributor.DATA_TYPE_UINT8,
             {:mesgType=>FitContributor.MESG_TYPE_RECORD, :units=>"B"}
         ) as FitContributor.Field;
 
-        bananasEarnedField.setData(0.0);
+        heartRateField.setData(0);
+        */
     }
     
     function onSensor(sensorInfo as Sensor.Info) as Void {
     
     	hrData = sensorInfo.heartRate;
-        /**+
-    	System.println( "Accelerometro: " + sensorInfo.accel);
-    	//System.println( "Altitudine: " + sensorInfo.altitude);
-    	System.println( "Cadenza: " + sensorInfo.cadence);
-    	//System.println( "Nord: " + sensorInfo.heading);
-    	System.println( "Heart Rate: " + hrData);
-    	System.println( "Magnetometro: " + sensorInfo.mag);
-    	//System.println( "Saturazione: " + sensorInfo.oxygenSaturation);
-    	System.println( "Potenza: " + sensorInfo.power);
-    	System.println( "Pressione: " + sensorInfo.pressure);
-    	System.println( "Temperatura: " + sensorInfo.temperature);
-        */
-    	WatchUi.requestUpdate();
+       
 	}
 	
 	    // Load your resources here
@@ -68,27 +58,25 @@ class SwimCraView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        /**
     	var infoString = "" + hrData;
     	var view = View.findDrawableById("TimeLabel") as Text;
         view.setText(infoString);
-        
-		/*
-		var heartRateAverage = Sensor.Info.heartRate;
-		var heartRate = 0; // valore iniziale
-        var heartRateActivity = Activity.Info.currentHeartRate;
-        Storage.setValue("battito", heartRateAverage);
-        System.println("Storage heart rate: " + Storage.getValue("battito"));
-        
-        System.println("HR avg: " + heartRateAverage);
-        System.println("HR activity: " + heartRateActivity);
 
-*/
-		Storage.setValue("battito", hrData);
-        System.println("Storage heart rate: " + Storage.getValue("battito"));
-        System.println(totalBananas);
+        //avgHeartRate = Toybox.SensorHistory.getHeartRateHistory();
+        avgHeartRate+=2;
+        heartRateField.setData(avgHeartRate);
+
+		//Storage.setValue("battito", hrData);
+        //System.println("Storage heart rate: " + Storage.getValue("battito"));
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        */
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.clear();
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
     }
 
     // Called when this View is removed from the screen. Save the
@@ -98,15 +86,20 @@ class SwimCraView extends WatchUi.WatchFace {
     }
 
 
-
-    function compute(info) {
-        if (info != null && info.calories != null) {
-            // Calculate and set data to be written to the Field
-            totalBananas = (info.calories / CALORIES_PER_BANANA).toFloat();
-            bananasEarnedField.setData(totalBananas);
+    //! Show the result or status of the web request
+    //! @param args Data from the web request, or error message
+    public function onReceive(args as Dictionary or String or Null) as Void {
+        if (args instanceof String) {
+            _message = args;
+        } else if (args instanceof Dictionary) {
+            // Print the arguments duplicated and returned by jsonplaceholder.typicode.com
+            var keys = args.keys();
+            _message = "";
+            for (var i = 0; i < keys.size(); i++) {
+                _message += Lang.format("$1$: $2$\n", [keys[i], args[keys[i]]]);
+            }
         }
-        // Display the data on the screen of the device
-        return totalBananas;
+        WatchUi.requestUpdate();
     }
 
 }

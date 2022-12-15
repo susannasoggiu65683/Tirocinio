@@ -1,15 +1,67 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.Communications;
 
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
+    private var _notify as Method(args as Dictionary or String or Null) as Void;
 
-    function initialize() {
-        BehaviorDelegate.initialize();
+    //! Set up the callback to the view
+    //! @param handler Callback method for when data is received
+    public function initialize(handler as Method(args as Dictionary or String or Null) as Void) {
+        WatchUi.BehaviorDelegate.initialize();
+        _notify = handler;
     }
 
     function onMenu() as Boolean {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new SwimCraMenuDelegate(), WatchUi.SLIDE_UP);
+        makeRequest();
+        //WatchUi.pushView(new Rez.Menus.MainMenu(), new SwimCraMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
     }
 
+     //! On a select event, make a web request
+    //! @return true if handled, false otherwise
+    public function onSelect() as Boolean {
+        makeRequest();
+        return true;
+    }
+
+    //! Make the web request
+    private function makeRequest() as Void {
+        _notify.invoke("Executing\nRequest");
+
+        var myDict = {
+            "One" => 1,
+            "Two" => 2,
+            "Three" => 3
+        };
+
+        var options = {
+            :method => Communications.HTTP_REQUEST_METHOD_POST,
+            :headers => {
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+            
+            },
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN
+            
+        };
+
+        Communications.makeWebRequest(
+            "http://127.0.0.1:5000/",
+            //metti i datini qui parametri
+            myDict,
+            options,
+            method(:onReceive) //responseCallback
+        );
+    }
+
+    //! Receive the data from the web request
+    //! @param responseCode The server response code
+    //! @param data Content from a successful request
+    public function onReceive(responseCode as Number, data as Dictionary?) as Void {
+        if (responseCode == 200) {
+            _notify.invoke(data);
+        } else {
+            _notify.invoke("Failed to load\nError: " + responseCode.toString());
+        }
+    }
 }
