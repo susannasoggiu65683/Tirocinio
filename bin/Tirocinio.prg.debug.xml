@@ -46,16 +46,16 @@
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="37" parent="globals/SwimCraDelegate" pc="268436206" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="38" parent="globals/SwimCraDelegate" pc="268436210" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="40" parent="globals/SwimCraDelegate" pc="268436233" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="44" parent="globals/SwimCraDelegate" pc="268436272" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="54" parent="globals/SwimCraDelegate" pc="268436354" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="66" parent="globals/SwimCraDelegate" pc="268436396" symbol="onReceive"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="67" parent="globals/SwimCraDelegate" pc="268436400" symbol="onReceive"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="68" parent="globals/SwimCraDelegate" pc="268436411" symbol="onReceive"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="70" parent="globals/SwimCraDelegate" pc="268436434" symbol="onReceive"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="75" parent="globals/SwimCraDelegate" pc="268436470" symbol="getIterator"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="77" parent="globals/SwimCraDelegate" pc="268436474" symbol="getIterator"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="78" parent="globals/SwimCraDelegate" pc="268436517" symbol="getIterator"/>
-        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="80" parent="globals/SwimCraDelegate" pc="268436550" symbol="getIterator"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="45" parent="globals/SwimCraDelegate" pc="268436272" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="14" lineNum="55" parent="globals/SwimCraDelegate" pc="268436354" symbol="&lt;globals/SwimCraDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="67" parent="globals/SwimCraDelegate" pc="268436396" symbol="onReceive"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="68" parent="globals/SwimCraDelegate" pc="268436400" symbol="onReceive"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="69" parent="globals/SwimCraDelegate" pc="268436411" symbol="onReceive"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="15" lineNum="71" parent="globals/SwimCraDelegate" pc="268436434" symbol="onReceive"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="76" parent="globals/SwimCraDelegate" pc="268436470" symbol="getIterator"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="78" parent="globals/SwimCraDelegate" pc="268436474" symbol="getIterator"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="79" parent="globals/SwimCraDelegate" pc="268436517" symbol="getIterator"/>
+        <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="16" lineNum="81" parent="globals/SwimCraDelegate" pc="268436550" symbol="getIterator"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="17" lineNum="8" parent="globals/SwimCraDelegate" pc="268437419" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="17" lineNum="14" parent="globals/SwimCraDelegate" pc="268437437" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\susyv\\Desktop\\Tirocinio\\source\\SwimCraDelegate.mc" id="17" lineNum="8" parent="globals/SwimCraDelegate" pc="268437419" symbol="&lt;init&gt;"/>

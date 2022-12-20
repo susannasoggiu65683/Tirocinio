@@ -39,6 +39,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         
         var myDict = {
             "Elevation" => sensorIter.next().data
+            
         };
 
         var options = {
