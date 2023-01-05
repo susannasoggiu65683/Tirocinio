@@ -15,6 +15,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     private var _message as String = "Press menu or\nselect button";
 	var heartRateField = null;
     var avgHeartRate = 0;
+    var count = 0;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -45,9 +46,18 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     }
     
     function onSensor(sensorInfo as Sensor.Info) as Void {
-    
+        
     	hrData = sensorInfo.heartRate;
-       
+        // Print out the next entry in the iterator
+        if (sensorIter != null) {
+            System.println("Elevation: " + sensorIter.next().data);
+        }
+        System.println("Magnetometer: " + sensorInfo.mag);
+        System.println("Pressure: " + sensorInfo.pressure);
+        System.println("Altitude: " + sensorInfo.altitude);
+        System.println("Accelerometer: " + sensorInfo.accel);
+        count = count + 1;
+        System.println(count);
 	}
 	
 	    // Load your resources here
@@ -63,10 +73,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Print out the next entry in the iterator
-        if (sensorIter != null) {
-            System.println(sensorIter.next().data);
-        }
+        
         /**
     	var infoString = "" + hrData;
     	var view = View.findDrawableById("TimeLabel") as Text;

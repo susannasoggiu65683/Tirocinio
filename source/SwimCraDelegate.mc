@@ -14,7 +14,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     var sensorIter = getIterator();
 
     //! Set up the callback to the view
-    //! @param handler Callback method for when data is received
+    //! @param handler Callback method for when data is received 
     public function initialize(handler as Method(args as Dictionary or String or Null) as Void) {
         WatchUi.BehaviorDelegate.initialize();
         _notify = handler;
@@ -53,7 +53,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         };
 
         Communications.makeWebRequest(
-            "http://127.0.0.1:5000/",
+            "http://127.0.0.1:5000/", // cambia
             //metti i datini qui parametri
             myDict,
             options,
