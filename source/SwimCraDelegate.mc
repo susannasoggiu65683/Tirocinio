@@ -54,11 +54,11 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 
         Communications.makeWebRequest(
             "http://127.0.0.1:5000/", // cambia
-            //metti i datini qui parametri
-            myDict,
+            myDict, // data
             options,
             method(:onReceive) //responseCallback
         );
+        //clearValues();
     }
 
     //! Receive the data from the web request

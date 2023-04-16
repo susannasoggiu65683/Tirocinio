@@ -3,46 +3,31 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.Sensor;
 import Toybox.SensorHistory;
+import Toybox.SensorLogging;
 import Toybox.System;
 import Toybox.Timer;
 import Toybox.Activity;
 import Toybox.ActivityRecording;
 import Toybox.FitContributor;
 
-using Toybox.Application.Storage;
-
 class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     private var _message as String = "Press menu or\nselect button";
-	var heartRateField = null;
-    var avgHeartRate = 0;
-    var count = 0;
-
-    // Store the iterator info in a variable. The options are 'null' in
-    // this case so the entire available history is returned with the
-    // newest samples returned first.
+     private var _labelCount as Text?;
+    private var _labelSamples as Text?;
+    private var _labelPeriod as Text?;
+    private var sensorsCounter as SwimCraProcess;
     var sensorIter = getIterator();
-
-    const HR_FIELD_ID = 0;
-
 	var hrData;
+
+
+    
 
     function initialize() {
         //WatchFace.initialize();
         WatchUi.View.initialize();
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
-
-        /**
-        // Create the custom FIT data field we want to record.
-        heartRateField = WatchUi.SimpleDataField.createField(
-            "average_heart_rate",
-            HR_FIELD_ID,
-            FitContributor.DATA_TYPE_UINT8,
-            {:mesgType=>FitContributor.MESG_TYPE_RECORD, :units=>"B"}
-        ) as FitContributor.Field;
-
-        heartRateField.setData(0);
-        */
+        sensorsCounter = new $.SwimCraProcess();
     }
     
     function onSensor(sensorInfo as Sensor.Info) as Void {
@@ -50,55 +35,56 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     	hrData = sensorInfo.heartRate;
         // Print out the next entry in the iterator
         if (sensorIter != null) {
-            System.println("Elevation: " + sensorIter.next().data);
+            //System.println("Elevation: " + sensorIter.next().data);
         }
-        System.println("Magnetometer: " + sensorInfo.mag);
-        System.println("Pressure: " + sensorInfo.pressure);
-        System.println("Altitude: " + sensorInfo.altitude);
-        System.println("Accelerometer: " + sensorInfo.accel);
-        count = count + 1;
-        System.println(count);
+
+        WatchUi.requestUpdate();
 	}
 	
 	    // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
+        _labelCount = View.findDrawableById("id_pitch_count") as Text;
+        _labelSamples = View.findDrawableById("id_pitch_samples") as Text;
+        _labelPeriod = View.findDrawableById("id_pitch_period") as Text;
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+        sensorsCounter.onStart();
     }
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        
-        /**
-    	var infoString = "" + hrData;
-    	var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(infoString);
 
-        //avgHeartRate = Toybox.SensorHistory.getHeartRateHistory();
-        avgHeartRate+=2;
-        heartRateField.setData(avgHeartRate);
+        //dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        //dc.clear();
+        //dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        //dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2+50, Graphics.FONT_SMALL, _message2, Graphics.TEXT_JUSTIFY_CENTER);
+        var labelCount = _labelCount;
+        if (labelCount != null) {
+            labelCount.setText("Count: " + sensorsCounter.getCount());
+        }
 
-		//Storage.setValue("battito", hrData);
-        //System.println("Storage heart rate: " + Storage.getValue("battito"));
+        var labelSamples = _labelSamples;
+        if (labelSamples != null) {
+            labelSamples.setText("Samples: " + sensorsCounter.getSamples());
+        }
 
-        // Call the parent onUpdate function to redraw the layout
+        var labelPeriod = _labelPeriod;
+        if (labelPeriod != null) {
+            labelPeriod.setText("Period: " + sensorsCounter.getPeriod());
+        }
         View.onUpdate(dc);
-        */
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.clear();
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
     }
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+        sensorsCounter.onStop();
     }
 
 
@@ -126,5 +112,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         }
         return null;
     }
+
+
 
 }
