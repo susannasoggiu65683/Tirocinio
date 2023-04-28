@@ -53,7 +53,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         };
 
         Communications.makeWebRequest(
-            "http://127.0.0.1:5000/", // cambia
+            "https://1e04-62-11-229-216.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback
