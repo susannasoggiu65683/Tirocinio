@@ -16,6 +16,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     private var _labelCount as Text?;
     private var _labelSamples as Text?;
     private var _labelPeriod as Text?;
+    private var _labelBestTime as Text?;
     private var sensorsCounter as SwimCraProcess;
     var sensorIter = getIterator();
 	var hrData;
@@ -29,6 +30,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
         sensorsCounter = new $.SwimCraProcess();
+        _labelBestTime = "pino";
     }
     
     function onSensor(sensorInfo as Sensor.Info) as Void {
@@ -48,6 +50,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         _labelCount = View.findDrawableById("id_pitch_count") as Text;
         _labelSamples = View.findDrawableById("id_pitch_samples") as Text;
         _labelPeriod = View.findDrawableById("id_pitch_period") as Text;
+        _labelBestTime = View.findDrawableById("id_best_time") as Text;
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -64,22 +67,30 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         dc.clear();
         dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         //dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2+50, Graphics.FONT_SMALL, _message2, Graphics.TEXT_JUSTIFY_CENTER);
-        /**
+        
         var labelCount = _labelCount;
         if (labelCount != null) {
-            labelCount.setText("Count: " + sensorsCounter.getCount());
+            labelCount.setText("Bracciate: " + sensorsCounter.getCount());
         }
 
         var labelSamples = _labelSamples;
         if (labelSamples != null) {
-            labelSamples.setText("Samples: " + sensorsCounter.getSamples());
+            labelSamples.setText("Vasche: " + sensorsCounter.getSamples());
         }
-
+        
         var labelPeriod = _labelPeriod;
         if (labelPeriod != null) {
-            labelPeriod.setText("Period: " + sensorsCounter.getPeriod());
+            labelPeriod.setText("Tempo: " + sensorsCounter.getPeriod());
         }
-        */
+        
+        var labelBestTime = _labelBestTime;
+        if (labelBestTime != null)
+        {
+            labelBestTime.setText("Migliore: " + "check");
+        }
+        
+    
+        
         View.onUpdate(dc);
     }
 
