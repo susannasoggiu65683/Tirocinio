@@ -44,16 +44,18 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_POST,
+            /**
             :headers => {
-                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED //Specifies a content type of application/x-www-form-urlencoded
             
             },
-            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN
+            */
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN //HTTP_RESPONSE_CONTENT_TYPE_FIT
             
         };
 
         Communications.makeWebRequest(
-            "https://1e04-62-11-229-216.ngrok-free.app", // cambia
+            "https://eb27-62-11-229-216.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback

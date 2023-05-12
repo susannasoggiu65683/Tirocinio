@@ -70,9 +70,9 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         
         var labelCount = _labelCount;
         if (labelCount != null) {
-            labelCount.setText("Bracciate: " + sensorsCounter.getCount());
+            labelCount.setText("Accel: " + sensorsCounter.getCount());
         }
-
+        
         var labelSamples = _labelSamples;
         if (labelSamples != null) {
             labelSamples.setText("Vasche: " + sensorsCounter.getSamples());
@@ -86,7 +86,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         var labelBestTime = _labelBestTime;
         if (labelBestTime != null)
         {
-            labelBestTime.setText("Migliore: " + "check");
+            labelBestTime.setText("Migliore: " + _message);
         }
         
     
