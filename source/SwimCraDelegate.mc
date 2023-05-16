@@ -7,6 +7,7 @@ import Toybox.System;
 
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var _notify as Method(args as Dictionary or String or Null) as Void;
+    private var sensorSample as SwimCraProcess;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -17,11 +18,15 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     //! @param handler Callback method for when data is received 
     public function initialize(handler as Method(args as Dictionary or String or Null) as Void) {
         WatchUi.BehaviorDelegate.initialize();
+        sensorSample = new $.SwimCraProcess();
         _notify = handler;
+        sensorSample.onStart();
+        //sensorsCounter.onStop();
     }
 
     function onMenu() as Boolean {
         makeRequest();
+        System.println(responseCode.toString()+"\n"); // debug console
         //WatchUi.pushView(new Rez.Menus.MainMenu(), new SwimCraMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
     }
@@ -38,7 +43,13 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         _notify.invoke("Executing\nRequest");
         
         var myDict = {
-            "Elevation" => sensorIter.next().data
+            "Elevation" => sensorIter.next().data,
+            "Accelx" => sensorSample.getAccelX(),
+            "Accely" => sensorSample.getAccelY(),
+            "Accelz" => sensorSample.getAccelZ(),
+            "Pressure" => Sensor.Info.pressure,
+            "Temperature" => Sensor.Info.temperature,
+            "Array test" => [1,2,3] // bisogna fixare gli array
             
         };
 
@@ -55,7 +66,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         };
 
         Communications.makeWebRequest(
-            "https://eb27-62-11-229-216.ngrok-free.app", // cambia
+            "https://9222-62-11-229-216.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback
@@ -69,6 +80,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     public function onReceive(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
             _notify.invoke(data);
+            System.println(data);
         } else {
             _notify.invoke("Failed to load\nError: " + responseCode.toString());
         }
@@ -82,5 +94,10 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         }
         return null;
     }
+
+    function onStop(){
+        sensorSample.onStop();
+    }
+    
     
 }

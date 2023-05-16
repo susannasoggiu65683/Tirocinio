@@ -57,7 +57,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        sensorsCounter.onStart();
+        //sensorsCounter.onStart();
     }
 
     // Update the view
@@ -98,7 +98,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
-        sensorsCounter.onStop();
+        //sensorsCounter.onStop();
     }
 
 

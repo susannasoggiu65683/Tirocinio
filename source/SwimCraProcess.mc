@@ -115,6 +115,27 @@ class SwimCraProcess {
         return _y;
     }
 
+    //! Return current x array samples
+    //! @return array
+    public function getAccelX() as Array<Number> {
+        
+        return _x;
+    }
+
+    //! Return current y array samples
+    //! @return array
+    public function getAccelY() as Array<Number> {
+        
+        return _y;
+    }
+
+    //! Return current z array samples
+    //! @return array
+    public function getAccelZ() as Array<Number> {
+        
+        return _z;
+    }
+
     //! Get the total number of logged samples
     //! @return The number of samples
     public function getSamples() as Number? {

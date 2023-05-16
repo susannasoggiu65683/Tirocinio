@@ -1,4 +1,4 @@
-from bottle import route, run, template, get,post, request, error
+from bottle import route, run, template, get,post, request, error, static_file
 from pyngrok import ngrok
 import ngrok
 import os
@@ -18,7 +18,7 @@ def index(name):
 def home():
     return "Hello frog"
 
-@route('/', method = 'POST')
+@route('/create', method = 'POST')
 def home():
     data = request.body
     with open("C:\\Users\\susyv\\Desktop\\testnuoto.FIT", "w") as f: #path del server dir + nome file da salvare
@@ -26,6 +26,11 @@ def home():
     #shutil.copy(input_file, output_directory)  
     success = os.path.exists("C:\\Users\susyv\\Desktop\\testnuoto.FIT")
     return "success"
+
+@route('/', method = 'POST')
+def LogData():
+    return request.body
+
 
 @error(404)
 def error404(error):
