@@ -42,17 +42,10 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private function makeRequest() as Void {
         _notify.invoke("Executing\nRequest");
         
-        var myDict = {
-            "Elevation" => sensorIter.next().data,
-            "Accelx" => sensorSample.getAccelX(),
-            "Accely" => sensorSample.getAccelY(),
-            "Accelz" => sensorSample.getAccelZ(),
-            "Pressure" => Sensor.Info.pressure,
-            "Temperature" => Sensor.Info.temperature,
-            "Array test" => [1,2,3] // bisogna fixare gli array
-            
-        };
-
+        var _x;
+        var _y;
+        var _z;
+        var myDict;
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_POST,
             /**
@@ -64,13 +57,46 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN //HTTP_RESPONSE_CONTENT_TYPE_FIT
             
         };
+        
+        _x = sensorSample.getAccelX();
+        _y = sensorSample.getAccelX();
+        _z = sensorSample.getAccelX();
 
-        Communications.makeWebRequest(
-            "https://9222-62-11-229-216.ngrok-free.app", // cambia
+        for (var i = 0; i < _x.size(); ++i) {
+            myDict = {
+                "Elevation" => sensorIter.next().data,
+                "Accelx" => _x[i],
+                "Accely" => _y[i],
+                "Accelz" => _z[i],
+                "Pressure" => Sensor.Info.pressure, // correggere
+                "Temperature" => Sensor.Info.temperature, // correggere
+                //"Array test" => [1,2,3] // bisogna fixare gli array
+            };
+
+            Communications.makeWebRequest(
+            "https://db5f-84-220-2-96.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback
-        );
+            );
+        }
+        
+
+        
+
+
+
+        /**
+        for (var i = 0; i < _x.size(); ++i) {
+            cur_acc_x = _x[i];
+            cur_acc_y = _y[i];
+            cur_acc_z = _z[i];
+        }
+        */
+
+       
+
+        
         //clearValues();
     }
 
