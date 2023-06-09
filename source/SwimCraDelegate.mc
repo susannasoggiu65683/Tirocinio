@@ -64,17 +64,19 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 
         for (var i = 0; i < _x.size(); ++i) {
             myDict = {
-                "Elevation" => sensorIter.next().data,
                 "Accelx" => _x[i],
                 "Accely" => _y[i],
                 "Accelz" => _z[i],
+                "Elevation" => sensorIter.next().data,
                 "Pressure" => Sensor.Info.pressure, // correggere
                 "Temperature" => Sensor.Info.temperature, // correggere
+                
                 //"Array test" => [1,2,3] // bisogna fixare gli array
             };
 
+            //ngrok http http://localhost:5000
             Communications.makeWebRequest(
-            "https://db5f-84-220-2-96.ngrok-free.app", // cambia
+            "https://46bb-84-220-103-210.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback
