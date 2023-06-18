@@ -4,6 +4,7 @@ import Toybox.Communications;
 import Toybox.Sensor;
 import Toybox.SensorHistory;
 import Toybox.System;
+import Toybox.Application.Storage;
 
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var _notify as Method(args as Dictionary or String or Null) as Void;
@@ -17,6 +18,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     //! Set up the callback to the view
     //! @param handler Callback method for when data is received 
     public function initialize(handler as Method(args as Dictionary or String or Null) as Void) {
+        Storage.setValue("id", 0);
         WatchUi.BehaviorDelegate.initialize();
         sensorSample = new $.SwimCraProcess();
         _notify = handler;
@@ -41,20 +43,18 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     //! Make the web request
     private function makeRequest() as Void {
         _notify.invoke("Executing\nRequest");
-        
+        Storage.setValue("id", Storage.getValue("id"+1));
         var _x;
         var _y;
         var _z;
-        var myDict;
+        var myDict ={};
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_POST,
-            /**
             :headers => {
-                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED //Specifies a content type of application/x-www-form-urlencoded
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_JSON
             
             },
-            */
-            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN //HTTP_RESPONSE_CONTENT_TYPE_FIT
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN
             
         };
         
@@ -63,8 +63,22 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         _z = sensorSample.getAccelX();
 
         for (var i = 0; i < _x.size(); ++i) {
+            myDict.put("id", Storage.getValue("id"));
+            myDict.put("Accelx", _x[i]);
+            myDict.put("Accely", _y[i]);
+            myDict.put("Accelz", _z[i]);
+            myDict.put("Elevation", sensorIter.next().data);
+            myDict.put("Pressure", Sensor.Info.pressure);
+            myDict.put("Temperature", Sensor.Info.temperature);
+            /**
+
+            var payload = [];
+            payload.add([ "ClickType", "SerialNumber", "Time" ]);
+            payload.add([ "button1", "455664445671", 0 ]);
+
+            params.put("payload", payload);
             myDict = {
-                "Accelx" => _x[i],
+                "Accelx" => _x[i], //usare put
                 "Accely" => _y[i],
                 "Accelz" => _z[i],
                 "Elevation" => sensorIter.next().data,
@@ -73,10 +87,11 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
                 
                 //"Array test" => [1,2,3] // bisogna fixare gli array
             };
-
+            */
             //ngrok http http://localhost:5000
+            System.println(myDict);
             Communications.makeWebRequest(
-            "https://46bb-84-220-103-210.ngrok-free.app", // cambia
+            "https://d6d0-84-220-103-210.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback
