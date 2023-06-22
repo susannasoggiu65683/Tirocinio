@@ -9,6 +9,8 @@ import Toybox.Application.Storage;
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var _notify as Method(args as Dictionary or String or Null) as Void;
     private var sensorSample as SwimCraProcess;
+    var temperatureData;
+    var pressureData;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -18,6 +20,8 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     //! Set up the callback to the view
     //! @param handler Callback method for when data is received 
     public function initialize(handler as Method(args as Dictionary or String or Null) as Void) {
+        Sensor.setEnabledSensors( [Sensor.SENSOR_TEMPERATURE] );
+        Sensor.enableSensorEvents( method( :onSensor ) );
         Storage.setValue("id", 0);
         WatchUi.BehaviorDelegate.initialize();
         sensorSample = new $.SwimCraProcess();
@@ -25,6 +29,16 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         sensorSample.onStart();
         //sensorsCounter.onStop();
     }
+
+    function onSensor(sensorInfo as Sensor.Info) as Void {
+        
+    	temperatureData = sensorInfo.temperature;
+        pressureData = sensorInfo.pressure;
+        // Print out the next entry in the iterator
+        if (sensorIter != null) {
+            //System.println("Elevation: " + sensorIter.next().data);
+        }
+	}
 
     function onMenu() as Boolean {
         makeRequest();
@@ -68,8 +82,8 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             myDict.put("Accely", _y[i]);
             myDict.put("Accelz", _z[i]);
             myDict.put("Elevation", sensorIter.next().data);
-            myDict.put("Pressure", Sensor.Info.pressure);
-            myDict.put("Temperature", Sensor.Info.temperature);
+            myDict.put("Pressure", pressureData);
+            myDict.put("Temperature", temperatureData);
             /**
 
             var payload = [];

@@ -62,7 +62,7 @@ class SwimCraProcess {
         var options = {:coefficients => [-0.0278f, 0.9444f, -0.0278f] as Array<Float>, :gain => 0.001f};
         try {
             _filter = new Math.FirFilter(options);
-            _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}});
+            _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}}); //ci sono anche altre opzioni + giroscopio e magnetometro
             _session = ActivityRecording.createSession({:name=>"PitchCounter", :sport=>ActivityRecording.SPORT_GENERIC, :sensorLogger =>_logger as SensorLogger});
         } catch (e) {
             System.println(e.getErrorMessage());
@@ -87,8 +87,8 @@ class SwimCraProcess {
     //! Start pitch counter
     public function onStart() as Void {
         // initialize accelerometer
-        var options = {:period => 1, :accelerometer => {:enabled => true, :sampleRate => 25}};
-        try {
+        var options = {:period => 1, :accelerometer => {:enabled => true, :sampleRate => 25}, :gyroscope =>{:enabled => true, :sampleRate => 25}, :magnetometer=>{:enabled => true, :sampleRate => 25}}; // accel include power pitch e roll
+        try {   
             Sensor.registerSensorDataListener(method(:accelCallback), options);
             var session = _session;
             if (session != null) {
