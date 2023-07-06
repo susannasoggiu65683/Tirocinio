@@ -11,8 +11,7 @@ import Toybox.ActivityRecording;
 import Toybox.FitContributor;
 
 class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
-    private var _message as String = "Press menu or\nselect button";
-    //private var _message2 as String = ""+cazz;
+    private var _message as String = "Press menu button";
     private var _labelCount as Text?;
     private var _labelSamples as Text?;
     private var _labelPeriod as Text?;
@@ -66,7 +65,6 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
         dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        //dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2+50, Graphics.FONT_SMALL, _message2, Graphics.TEXT_JUSTIFY_CENTER);
         
         var labelCount = _labelCount;
         if (labelCount != null) {
@@ -86,7 +84,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         var labelBestTime = _labelBestTime;
         if (labelBestTime != null)
         {
-            labelBestTime.setText("Migliore: " + _message);
+            labelBestTime.setText("Connessione:\n" + _message);
         }
         
     

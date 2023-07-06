@@ -11,6 +11,10 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var sensorSample as SwimCraProcess;
     var temperatureData;
     var pressureData;
+    var elevationData;
+    var _x;
+    var _y;
+    var _z;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -26,14 +30,21 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         WatchUi.BehaviorDelegate.initialize();
         sensorSample = new $.SwimCraProcess();
         _notify = handler;
+        
         sensorSample.onStart();
-        //sensorsCounter.onStop();
+        _x = sensorSample.getAccelX();
+        _y = sensorSample.getAccelY();
+        _z = sensorSample.getAccelZ();
     }
 
     function onSensor(sensorInfo as Sensor.Info) as Void {
-        
+        _x.addAll(sensorSample.getAccelX());
+        _y.addAll(sensorSample.getAccelY());
+        _z.addAll(sensorSample.getAccelZ());
     	temperatureData = sensorInfo.temperature;
         pressureData = sensorInfo.pressure;
+        elevationData = sensorInfo.altitude;
+
         // Print out the next entry in the iterator
         if (sensorIter != null) {
             //System.println("Elevation: " + sensorIter.next().data);
@@ -41,8 +52,13 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 	}
 
     function onMenu() as Boolean {
-        makeRequest();
-        System.println(responseCode.toString()+"\n"); // debug console
+        if(connessione a posto){
+            makeRequest();
+        } else {
+            _notify.invoke("Connect your device");
+        }
+        
+        //System.println(responseCode.toString()+"\n"); // debug console
         //WatchUi.pushView(new Rez.Menus.MainMenu(), new SwimCraMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
     }
@@ -50,7 +66,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
      //! On a select event, make a web request
     //! @return true if handled, false otherwise
     public function onSelect() as Boolean {
-        makeRequest();
+        sensorSample.onStop();
         return true;
     }
 
@@ -58,9 +74,9 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private function makeRequest() as Void {
         _notify.invoke("Executing\nRequest");
         Storage.setValue("id", Storage.getValue("id"+1));
-        var _x;
-        var _y;
-        var _z;
+        //var di tempo per regolare la comunicazione e il corretto invio dei dati
+        
+        
         var myDict ={};
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_POST,
@@ -72,16 +88,17 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             
         };
         
-        _x = sensorSample.getAccelX();
-        _y = sensorSample.getAccelX();
-        _z = sensorSample.getAccelX();
+        
+        
+        
 
         for (var i = 0; i < _x.size(); ++i) {
             myDict.put("id", Storage.getValue("id"));
             myDict.put("Accelx", _x[i]);
+            System.println(_x[i]);
             myDict.put("Accely", _y[i]);
             myDict.put("Accelz", _z[i]);
-            myDict.put("Elevation", sensorIter.next().data);
+            myDict.put("Elevation", elevationData);
             myDict.put("Pressure", pressureData);
             myDict.put("Temperature", temperatureData);
             /**
@@ -91,44 +108,17 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             payload.add([ "button1", "455664445671", 0 ]);
 
             params.put("payload", payload);
-            myDict = {
-                "Accelx" => _x[i], //usare put
-                "Accely" => _y[i],
-                "Accelz" => _z[i],
-                "Elevation" => sensorIter.next().data,
-                "Pressure" => Sensor.Info.pressure, // correggere
-                "Temperature" => Sensor.Info.temperature, // correggere
-                
-                //"Array test" => [1,2,3] // bisogna fixare gli array
-            };
             */
             //ngrok http http://localhost:5000
-            System.println(myDict);
+            //System.println(myDict);
             Communications.makeWebRequest(
-            "https://d6d0-84-220-103-210.ngrok-free.app", // cambia
+            "https://6baa-62-11-225-72.ngrok-free.app", // cambia
             myDict, // data
             options,
             method(:onReceive) //responseCallback
             );
         }
         
-
-        
-
-
-
-        /**
-        for (var i = 0; i < _x.size(); ++i) {
-            cur_acc_x = _x[i];
-            cur_acc_y = _y[i];
-            cur_acc_z = _z[i];
-        }
-        */
-
-       
-
-        
-        //clearValues();
     }
 
     //! Receive the data from the web request
@@ -137,9 +127,16 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     public function onReceive(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
             _notify.invoke(data);
-            System.println(data);
+        } else if(responseCode == -101){
+            _notify.invoke("Too many requests\nerror -101");
+        } else if(responseCode == -400){
+            _notify.invoke("Invalid response\nerror -400");
+        } else if(responseCode == -1001){
+            _notify.invoke("HTTP connection required\nerror -1001");
+        } else if(responseCode == 404){
+            _notify.invoke("Not found!\nerror 404");
         } else {
-            _notify.invoke("Failed to load\nError: " + responseCode.toString());
+            _notify.invoke("Error: " + responseCode.toString());
         }
     }
 
@@ -153,7 +150,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onStop(){
-        sensorSample.onStop();
+        
     }
     
     

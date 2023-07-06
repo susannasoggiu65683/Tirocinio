@@ -63,7 +63,7 @@ class SwimCraProcess {
         try {
             _filter = new Math.FirFilter(options);
             _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}}); //ci sono anche altre opzioni + giroscopio e magnetometro
-            _session = ActivityRecording.createSession({:name=>"PitchCounter", :sport=>ActivityRecording.SPORT_GENERIC, :sensorLogger =>_logger as SensorLogger});
+            _session = ActivityRecording.createSession({:name=>"SwimCraData", :sport=>ActivityRecording.SPORT_GENERIC, :sensorLogger =>_logger as SensorLogger});
         } catch (e) {
             System.println(e.getErrorMessage());
         }
@@ -104,7 +104,10 @@ class SwimCraProcess {
         Sensor.unregisterSensorDataListener();
         var session = _session;
         if (session != null) {
+            
             session.stop();
+            session.save();
+            
         }
     }
 
@@ -152,6 +155,15 @@ class SwimCraProcess {
         var logger = _logger;
         if (logger != null) {
             return logger.getStats().samplePeriod;
+        }
+        return null;
+    }
+
+
+    public function getData() as Number? {
+        var logger = _logger;
+        if (logger != null) {
+            return logger.getStats2(null);
         }
         return null;
     }

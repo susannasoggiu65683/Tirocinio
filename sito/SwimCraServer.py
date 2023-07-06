@@ -2,8 +2,6 @@ from bottle import route, run, template, get,post, request, error, static_file
 from pyngrok import ngrok
 import ngrok
 import sqlite3
-import os
-import json
 #import requests
 #import shutil
 
@@ -19,9 +17,6 @@ client = ngrok.Client("2OmnaBA4hgI1sRD4FhKTB5YDYdT_aG59uACn2SL7QwVCbXA6")
 for t in client.tunnels.list():
     print(t)
 
-@route('/hello/<name>')
-def index(name):
-    return template('<b>Hello {{name}}</b>!', name=name)
 
 
 
