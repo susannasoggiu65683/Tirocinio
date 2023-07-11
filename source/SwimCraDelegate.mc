@@ -5,6 +5,7 @@ import Toybox.Sensor;
 import Toybox.SensorHistory;
 import Toybox.System;
 import Toybox.Application.Storage;
+import Toybox.Timer;
 
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var _notify as Method(args as Dictionary or String or Null) as Void;
@@ -15,6 +16,9 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     var _x;
     var _y;
     var _z;
+    var recorded as Boolean;
+    var pause as Boolean;
+    var pressed as Boolean;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -25,22 +29,38 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     //! @param handler Callback method for when data is received 
     public function initialize(handler as Method(args as Dictionary or String or Null) as Void) {
         Sensor.setEnabledSensors( [Sensor.SENSOR_TEMPERATURE] );
-        Sensor.enableSensorEvents( method( :onSensor ) );
+        Sensor.enableSensorEvents( method( :onSensor ));
         Storage.setValue("id", 0);
         WatchUi.BehaviorDelegate.initialize();
         sensorSample = new $.SwimCraProcess();
         _notify = handler;
         
-        sensorSample.onStart();
         _x = sensorSample.getAccelX();
         _y = sensorSample.getAccelY();
         _z = sensorSample.getAccelZ();
+        recorded = false;
+        pressed = false;
+        sensorSample.onStart();
     }
 
     function onSensor(sensorInfo as Sensor.Info) as Void {
-        _x.addAll(sensorSample.getAccelX());
-        _y.addAll(sensorSample.getAccelY());
-        _z.addAll(sensorSample.getAccelZ());
+        var i;
+        // about 2650 values each array
+        if(System.getSystemStats().usedMemory < System.getSystemStats().totalMemory/2){
+            _x.addAll(sensorSample.getAccelX());
+            _y.addAll(sensorSample.getAccelY());
+            _z.addAll(sensorSample.getAccelZ());
+        } else {
+            if (_x.size() >= 25){
+                // empty first samples every time half memory is used
+                for(i=0; i < 25 ; i++){
+                    _x.remove(_x[0]);
+                    _y.remove(_y[0]);
+                    _z.remove(_z[0]);
+                }
+            }
+            
+        }
     	temperatureData = sensorInfo.temperature;
         pressureData = sensorInfo.pressure;
         elevationData = sensorInfo.altitude;
@@ -52,7 +72,9 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 	}
 
     function onMenu() as Boolean {
-        if(connessione a posto){
+        // connectionAvailable
+        if(System.getDeviceSettings().phoneConnected && !pressed){
+            pressed = true;
             makeRequest();
         } else {
             _notify.invoke("Connect your device");
@@ -66,12 +88,27 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
      //! On a select event, make a web request
     //! @return true if handled, false otherwise
     public function onSelect() as Boolean {
-        sensorSample.onStop();
+        if(!recorded){
+            sensorSample.onStop();
+            recorded = true;
+        }
+        
+        /**
+        if(recording){
+            sensorSample.onStop();
+            recording = false;
+        } else {
+            sensorSample.onStart();
+            recording = true;
+        }
+        */
         return true;
     }
 
     //! Make the web request
     private function makeRequest() as Void {
+        var timer = new Timer.Timer();
+        
         _notify.invoke("Executing\nRequest");
         Storage.setValue("id", Storage.getValue("id"+1));
         //var di tempo per regolare la comunicazione e il corretto invio dei dati
@@ -82,45 +119,42 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             :method => Communications.HTTP_REQUEST_METHOD_POST,
             :headers => {
                 "Content-Type" => Communications.REQUEST_CONTENT_TYPE_JSON
-            
             },
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN
             
         };
         
-        
-        
-        
 
-        for (var i = 0; i < _x.size(); ++i) {
+        for (var i = 0; i < _x.size() && System.getDeviceSettings().phoneConnected; i++) {
+            timer.start(method(:timerCallback), 50, true);
             myDict.put("id", Storage.getValue("id"));
             myDict.put("Accelx", _x[i]);
-            System.println(_x[i]);
             myDict.put("Accely", _y[i]);
             myDict.put("Accelz", _z[i]);
             myDict.put("Elevation", elevationData);
             myDict.put("Pressure", pressureData);
             myDict.put("Temperature", temperatureData);
-            /**
 
-            var payload = [];
-            payload.add([ "ClickType", "SerialNumber", "Time" ]);
-            payload.add([ "button1", "455664445671", 0 ]);
-
-            params.put("payload", payload);
-            */
-            //ngrok http http://localhost:5000
-            //System.println(myDict);
             Communications.makeWebRequest(
-            "https://6baa-62-11-225-72.ngrok-free.app", // cambia
+            "https://6baa-62-11-225-72.ngrok-free.app", // it changes
             myDict, // data
             options,
             method(:onReceive) //responseCallback
             );
+            
         }
+        pressed = false;
+        timer.stop();
+        _x = [];
+        _y = [];
+        _z = [];
         
     }
 
+    public function timerCallback () {
+        return true;
+    }
+    
     //! Receive the data from the web request
     //! @param responseCode The server response code
     //! @param data Content from a successful request

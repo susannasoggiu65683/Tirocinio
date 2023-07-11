@@ -1,6 +1,5 @@
 <layout id="WatchFace">
-    <label id="id_pitch_count" x="center" y="50" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_SMALL" />
-    <label id="id_pitch_samples" x="center" y="100" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_SMALL" />
-    <label id="id_pitch_period" x="center" y="150" color="Graphics.COLOR_BLUE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_MEDIUM" />
-    <label id="id_best_time" x="center" y="200" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_SMALL" />
+    <label id="id_record" x="center" y="50" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_SMALL" />
+    <label id="id_lap" x="center" y="110" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_SMALL" />
+    <label id="id_connection" x="center" y="170" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_SMALL" />
 </layout>

@@ -111,6 +111,7 @@ class SwimCraProcess {
         }
     }
 
+
     //! Return current pitch count
     //! @return The number of pitches counted
     public function getCount() as Array<Number> {

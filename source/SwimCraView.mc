@@ -12,10 +12,10 @@ import Toybox.FitContributor;
 
 class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     private var _message as String = "Press menu button";
-    private var _labelCount as Text?;
-    private var _labelSamples as Text?;
-    private var _labelPeriod as Text?;
-    private var _labelBestTime as Text?;
+    private var _recordMessage as String = "Press select button";
+    private var _labelRecord as Text?;
+    private var _labelLap as Text?;
+    private var _labelConnection as Text?;
     private var sensorsCounter as SwimCraProcess;
     var sensorIter = getIterator();
 	var hrData;
@@ -29,7 +29,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
         sensorsCounter = new $.SwimCraProcess();
-        _labelBestTime = "pino";
+        _labelConnection = "";
     }
     
     function onSensor(sensorInfo as Sensor.Info) as Void {
@@ -46,10 +46,9 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
 	    // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
-        _labelCount = View.findDrawableById("id_pitch_count") as Text;
-        _labelSamples = View.findDrawableById("id_pitch_samples") as Text;
-        _labelPeriod = View.findDrawableById("id_pitch_period") as Text;
-        _labelBestTime = View.findDrawableById("id_best_time") as Text;
+        _labelRecord = View.findDrawableById("id_record") as Text;
+        _labelLap = View.findDrawableById("id_lap") as Text;
+        _labelConnection = View.findDrawableById("id_connection") as Text;
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -66,25 +65,20 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         dc.clear();
         dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         
-        var labelCount = _labelCount;
-        if (labelCount != null) {
-            labelCount.setText("Accel: " + sensorsCounter.getCount());
+        var labelRecord = _labelRecord;
+        if (labelRecord != null) {
+            labelRecord.setText("Registra:\n" + _recordMessage);
         }
-        
-        var labelSamples = _labelSamples;
-        if (labelSamples != null) {
-            labelSamples.setText("Vasche: " + sensorsCounter.getSamples());
+        /**
+        var labelLap = _labelLap;
+        if (labelLap != null) {
+            labelLap.setText("Vasche: " + sensorsCounter.getSamples());
         }
-        
-        var labelPeriod = _labelPeriod;
-        if (labelPeriod != null) {
-            labelPeriod.setText("Tempo: " + sensorsCounter.getPeriod());
-        }
-        
-        var labelBestTime = _labelBestTime;
-        if (labelBestTime != null)
+        */
+        var labelConnection = _labelConnection;
+        if (labelConnection != null)
         {
-            labelBestTime.setText("Connessione:\n" + _message);
+            labelConnection.setText("Connessione:\n" + _message);
         }
         
     
@@ -96,7 +90,6 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
-        //sensorsCounter.onStop();
     }
 
 

@@ -26,8 +26,6 @@ def LogData():
     data = request.json #type dict
     global data_sent
     data_sent  = request.json
-    #print(data['Elevation'])
-    #data = request.POST.get('myDict', '').strip() #new = request.GET.get('task', '').strip()
     sql = "INSERT INTO sensorsdata (id, accelx, accely, accelz, elevation, pressure, temperature) VALUES (?, ?, ?, ?, ?, ?, ?)"
     cur = conn.cursor()
     cur.execute(sql, (data['id'], data['Accelx'], data['Accely'], data['Accelz'], data['Elevation'], data['Pressure'], data['Temperature']))
