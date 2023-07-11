@@ -5,20 +5,21 @@ import Toybox.Sensor;
 import Toybox.SensorHistory;
 import Toybox.System;
 import Toybox.Application.Storage;
-import Toybox.Timer;
 
 class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     private var _notify as Method(args as Dictionary or String or Null) as Void;
     private var sensorSample as SwimCraProcess;
-    var temperatureData;
-    var pressureData;
-    var elevationData;
     var _x;
     var _y;
     var _z;
+    var temperatureData;
+    var pressureData;
+    var elevationData;
     var recorded as Boolean;
     var pause as Boolean;
     var pressed as Boolean;
+    var errorFound as Boolean;
+    var myDict as Dictionary;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -39,7 +40,10 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         _y = sensorSample.getAccelY();
         _z = sensorSample.getAccelZ();
         recorded = false;
+        Storage.setValue("select", recorded);
         pressed = false;
+        errorFound = false;
+        myDict = {};
         sensorSample.onStart();
     }
 
@@ -64,24 +68,40 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     	temperatureData = sensorInfo.temperature;
         pressureData = sensorInfo.pressure;
         elevationData = sensorInfo.altitude;
+        Storage.setValue("id", Storage.getValue("id"+1));
 
-        // Print out the next entry in the iterator
-        if (sensorIter != null) {
-            //System.println("Elevation: " + sensorIter.next().data);
+        if(pressed && _x.size() > 100) {
+            for (var j = 0; j < _x.size(); j++){
+                myDict.put("Accelx", _x[j]);
+                myDict.put("Accely", _y[j]);
+                myDict.put("Accelz", _z[j]);
+            }
+            myDict.put("id", Storage.getValue("id"));
+            myDict.put("Elevation", elevationData);
+            myDict.put("Pressure", pressureData);
+            myDict.put("Temperature", temperatureData);
+            makeRequest();
         }
+
+        // Print out the next entry in the iteratorù
+        /**
+        if (sensorIter != null) {
+            System.println("Elevation: " + sensorIter.next().data);
+        }
+        */
 	}
 
     function onMenu() as Boolean {
         // connectionAvailable
-        if(System.getDeviceSettings().phoneConnected && !pressed){
+        if(System.getDeviceSettings().phoneConnected && !pressed) {
             pressed = true;
-            makeRequest();
-        } else {
+            _notify.invoke("Sending 100 samples");
+        } else if (!System.getDeviceSettings().phoneConnected && !pressed) {
             _notify.invoke("Connect your device");
+        } else if (pressed) {
+            pressed = false;
+            _notify.invoke("Press menu button");
         }
-        
-        //System.println(responseCode.toString()+"\n"); // debug console
-        //WatchUi.pushView(new Rez.Menus.MainMenu(), new SwimCraMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
     }
 
@@ -91,6 +111,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         if(!recorded){
             sensorSample.onStop();
             recorded = true;
+            Storage.setValue("select", recorded);
         }
         
         /**
@@ -107,14 +128,9 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 
     //! Make the web request
     private function makeRequest() as Void {
-        var timer = new Timer.Timer();
         
         _notify.invoke("Executing\nRequest");
-        Storage.setValue("id", Storage.getValue("id"+1));
-        //var di tempo per regolare la comunicazione e il corretto invio dei dati
         
-        
-        var myDict ={};
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_POST,
             :headers => {
@@ -123,37 +139,23 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN
             
         };
-        
 
-        for (var i = 0; i < _x.size() && System.getDeviceSettings().phoneConnected; i++) {
-            timer.start(method(:timerCallback), 50, true);
-            myDict.put("id", Storage.getValue("id"));
-            myDict.put("Accelx", _x[i]);
-            myDict.put("Accely", _y[i]);
-            myDict.put("Accelz", _z[i]);
-            myDict.put("Elevation", elevationData);
-            myDict.put("Pressure", pressureData);
-            myDict.put("Temperature", temperatureData);
-
-            Communications.makeWebRequest(
-            "https://6baa-62-11-225-72.ngrok-free.app", // it changes
+        Communications.makeWebRequest(
+            "https://c0b9-84-220-196-199.ngrok-free.app", // it changes
             myDict, // data
             options,
             method(:onReceive) //responseCallback
             );
-            
+        // clean already sent values
+        if (!errorFound){
+            _x = [];
+            _y = [];
+            _z = [];
         }
-        pressed = false;
-        timer.stop();
-        _x = [];
-        _y = [];
-        _z = [];
         
+       
     }
 
-    public function timerCallback () {
-        return true;
-    }
     
     //! Receive the data from the web request
     //! @param responseCode The server response code
@@ -161,8 +163,10 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     public function onReceive(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
             _notify.invoke(data);
+            errorFound = false;
         } else if(responseCode == -101){
             _notify.invoke("Too many requests\nerror -101");
+            errorFound = true;
         } else if(responseCode == -400){
             _notify.invoke("Invalid response\nerror -400");
         } else if(responseCode == -1001){

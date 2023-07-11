@@ -5,10 +5,9 @@ import Toybox.Sensor;
 import Toybox.SensorHistory;
 import Toybox.SensorLogging;
 import Toybox.System;
-import Toybox.Timer;
+import Toybox.Application.Storage;
 import Toybox.Activity;
 import Toybox.ActivityRecording;
-import Toybox.FitContributor;
 
 class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     private var _message as String = "Press menu button";
@@ -64,10 +63,16 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
         dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_MEDIUM, _message, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        
+
+        var selectPressed = Storage.getValue("select");
         var labelRecord = _labelRecord;
         if (labelRecord != null) {
-            labelRecord.setText("Registra:\n" + _recordMessage);
+            if(selectPressed){
+                _recordMessage = "FIT file saved";
+            } else {
+                _recordMessage = "Yes";
+            }
+            labelRecord.setText("Recording:\n" + _recordMessage);
         }
         /**
         var labelLap = _labelLap;
@@ -78,7 +83,7 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         var labelConnection = _labelConnection;
         if (labelConnection != null)
         {
-            labelConnection.setText("Connessione:\n" + _message);
+            labelConnection.setText("Connection:\n" + _message);
         }
         
     

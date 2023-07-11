@@ -31,14 +31,13 @@ def LogData():
     cur.execute(sql, (data['id'], data['Accelx'], data['Accely'], data['Accelz'], data['Elevation'], data['Pressure'], data['Temperature']))
     conn.commit()
     
-    return "everything ok"
+    return "Data sent"
 
 @route('/', method = 'GET')
 def home():
     global data_sent
     if data_sent:
-        #return f"The received data is: {data_sent}"
-        return "The received data is: {data_sent}"
+        return f"The received data is: {data_sent}"
     else:
         return "No data has been received yet"
     
