@@ -20,6 +20,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     var pressed as Boolean;
     var errorFound as Boolean;
     var myDict as Dictionary;
+    var url;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -63,7 +64,6 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
                     _z.remove(_z[0]);
                 }
             }
-            
         }
     	temperatureData = sensorInfo.temperature;
         pressureData = sensorInfo.pressure;
@@ -128,7 +128,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 
     //! Make the web request
     private function makeRequest() as Void {
-        
+        url = "https://github.com/susannasoggiu65683/Tirocinio/blob/main/sito/url.txt";
         _notify.invoke("Executing\nRequest");
         
         var options = {

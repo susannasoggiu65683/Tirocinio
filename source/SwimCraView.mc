@@ -9,13 +9,13 @@ import Toybox.Application.Storage;
 import Toybox.Activity;
 import Toybox.ActivityRecording;
 
-class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
+class SwimCraView extends WatchUi.View { 
     private var _message as String = "Press menu button";
     private var _recordMessage as String = "Press select button";
     private var _labelRecord as Text?;
     private var _labelLap as Text?;
     private var _labelConnection as Text?;
-    private var sensorsCounter as SwimCraProcess;
+    //private var sensorsCounter as SwimCraProcess;
     var sensorIter = getIterator();
 	var hrData;
 
@@ -23,11 +23,10 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
     
 
     function initialize() {
-        //WatchFace.initialize();
         WatchUi.View.initialize();
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE, Sensor.SENSOR_TEMPERATURE] );
     	Sensor.enableSensorEvents( method( :onSensor ) );
-        sensorsCounter = new $.SwimCraProcess();
+        //sensorsCounter = new $.SwimCraProcess();
         _labelConnection = "";
     }
     
@@ -122,7 +121,5 @@ class SwimCraView extends WatchUi.View { // prima watchui.WatchFace
         }
         return null;
     }
-
-
 
 }

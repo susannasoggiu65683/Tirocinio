@@ -58,11 +58,11 @@ class SwimCraProcess {
 
     //! Constructor
     public function initialize() {
-        // initialize FIR filter
+        // initialize filter
         var options = {:coefficients => [-0.0278f, 0.9444f, -0.0278f] as Array<Float>, :gain => 0.001f};
         try {
             _filter = new Math.FirFilter(options);
-            _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}}); //ci sono anche altre opzioni + giroscopio e magnetometro
+            _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}, :magnetometer => {:enabled => true}, :gyroscope => {:enabled => true}})
             _session = ActivityRecording.createSession({:name=>"SwimCraData", :sport=>ActivityRecording.SPORT_GENERIC, :sensorLogger =>_logger as SensorLogger});
         } catch (e) {
             System.println(e.getErrorMessage());
@@ -80,7 +80,7 @@ class SwimCraProcess {
             }
             _y = accelData.y;
             _z = accelData.z;
-            onAccelData();
+            //onAccelData();
         }
     }
 
