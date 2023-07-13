@@ -21,6 +21,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     var errorFound as Boolean;
     var myDict as Dictionary;
     var url;
+    var sendSamples;
 
     // Store the iterator info in a variable. The options are 'null' in
     // this case so the entire available history is returned with the
@@ -40,11 +41,16 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         _x = sensorSample.getAccelX();
         _y = sensorSample.getAccelY();
         _z = sensorSample.getAccelZ();
+        temperatureData = [];
+        pressureData = [];
+        elevationData = [];
         recorded = false;
         Storage.setValue("select", recorded);
         pressed = false;
         errorFound = false;
+        sendSamples = 200;
         myDict = {};
+        //Storage.setValue("id", 0);
         sensorSample.onStart();
     }
 
@@ -55,6 +61,10 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             _x.addAll(sensorSample.getAccelX());
             _y.addAll(sensorSample.getAccelY());
             _z.addAll(sensorSample.getAccelZ());
+            temperatureData = temperatureData.add(sensorInfo.temperature);
+            pressureData = pressureData.add(sensorInfo.pressure);
+            elevationData = elevationData.add(sensorInfo.altitude);
+
         } else {
             if (_x.size() >= 25){
                 // empty first samples every time half memory is used
@@ -63,27 +73,49 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
                     _y.remove(_y[0]);
                     _z.remove(_z[0]);
                 }
+                if(temperatureData.size() > 0){
+                    temperatureData = temperatureData.remove(temperatureData[0]);
+                }
+                if(pressureData.size() > 0){
+                    pressureData = pressureData.remove(pressureData[0]);
+                }
+                if(elevationData.size() > 0){
+                    elevationData = elevationData.remove(elevationData[0]);
+                }
+                
             }
         }
-    	temperatureData = sensorInfo.temperature;
-        pressureData = sensorInfo.pressure;
-        elevationData = sensorInfo.altitude;
-        Storage.setValue("id", Storage.getValue("id"+1));
+    	
+        
 
-        if(pressed && _x.size() > 100) {
-            for (var j = 0; j < _x.size(); j++){
-                myDict.put("Accelx", _x[j]);
-                myDict.put("Accely", _y[j]);
-                myDict.put("Accelz", _z[j]);
-            }
+        // 200 samples to avoid too many requests error
+        if(pressed && _x.size() > sendSamples) {
+            //makeUrlRequest();
             myDict.put("id", Storage.getValue("id"));
+            myDict.put("Accelx", _x);
+            myDict.put("Accely", _y);
+            myDict.put("Accelz", _z);
             myDict.put("Elevation", elevationData);
             myDict.put("Pressure", pressureData);
             myDict.put("Temperature", temperatureData);
+            Storage.setValue("id", Storage.getValue("id"+1));
+            
             makeRequest();
+            
+            if (!errorFound){
+                _x = [];
+                _y = [];
+                _z = [];
+                temperatureData = [];
+                pressureData = [];
+                elevationData = [];
+            }
+            
+            
+            
         }
 
-        // Print out the next entry in the iteratorù
+        // Print out the next entry in the iterator
         /**
         if (sensorIter != null) {
             System.println("Elevation: " + sensorIter.next().data);
@@ -95,7 +127,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         // connectionAvailable
         if(System.getDeviceSettings().phoneConnected && !pressed) {
             pressed = true;
-            _notify.invoke("Sending 100 samples");
+            _notify.invoke("Sending 200 samples");
         } else if (!System.getDeviceSettings().phoneConnected && !pressed) {
             _notify.invoke("Connect your device");
         } else if (pressed) {
@@ -126,9 +158,54 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
+
+    //! Make the web request
+    private function makeUrlRequest() as Void {
+        //url = "https://github.com/susannasoggiu65683/Tirocinio/blob/main/sito/url.txt";
+        
+        _notify.invoke("Executing\nRequest");
+        
+        var options = {
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON,
+            :headers => {
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_JSON
+            }
+        };
+
+        Communications.makeWebRequest(
+            "https://raw.githubusercontent.com/susannasoggiu65683/Tirocinio/main/sito/url.txt",
+            {}, // data
+            options,
+            method(:onReceiveUrl) //responseCallback
+            );
+               
+       
+    }
+
+    //! Receive the data from the web request
+    //! @param responseCode The server response code
+    //! @param data Content from a successful request
+    public function onReceiveUrl(responseCode as Number, data as String) as Void {
+        if (responseCode == 200) {
+            url = data;
+            System.println("ao" + data);
+            System.println("eo" + url);
+        } else if(responseCode == -101){
+            _notify.invoke("Too many requests\nerror -101");
+            errorFound = true;
+        } else if(responseCode == -400){
+            _notify.invoke("Invalid response\nerror -400");
+        } else if(responseCode == -1001){
+            _notify.invoke("HTTP connection required\nerror -1001");
+        } else if(responseCode == 404){
+            _notify.invoke("Not found!\nerror 404");
+        } else {
+            _notify.invoke("Error: " + responseCode.toString());
+        }
+    }
+
     //! Make the web request
     private function makeRequest() as Void {
-        url = "https://github.com/susannasoggiu65683/Tirocinio/blob/main/sito/url.txt";
         _notify.invoke("Executing\nRequest");
         
         var options = {
@@ -141,17 +218,13 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
         };
 
         Communications.makeWebRequest(
-            "https://c0b9-84-220-196-199.ngrok-free.app", // it changes
+            //url, // it changes
+            "https://13a4-84-220-196-199.ngrok-free.app",
             myDict, // data
             options,
             method(:onReceive) //responseCallback
-            );
-        // clean already sent values
-        if (!errorFound){
-            _x = [];
-            _y = [];
-            _z = [];
-        }
+        );
+        
         
        
     }
@@ -169,12 +242,16 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
             errorFound = true;
         } else if(responseCode == -400){
             _notify.invoke("Invalid response\nerror -400");
+            errorFound = true;
         } else if(responseCode == -1001){
             _notify.invoke("HTTP connection required\nerror -1001");
+            errorFound = true;
         } else if(responseCode == 404){
             _notify.invoke("Not found!\nerror 404");
+            errorFound = true;
         } else {
             _notify.invoke("Error: " + responseCode.toString());
+            errorFound = true;
         }
     }
 

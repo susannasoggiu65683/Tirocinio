@@ -62,7 +62,7 @@ class SwimCraProcess {
         var options = {:coefficients => [-0.0278f, 0.9444f, -0.0278f] as Array<Float>, :gain => 0.001f};
         try {
             _filter = new Math.FirFilter(options);
-            _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}, :magnetometer => {:enabled => true}, :gyroscope => {:enabled => true}})
+            _logger = new SensorLogging.SensorLogger({:accelerometer => {:enabled => true}, :magnetometer => {:enabled => true}, :gyroscope => {:enabled => true}});
             _session = ActivityRecording.createSession({:name=>"SwimCraData", :sport=>ActivityRecording.SPORT_GENERIC, :sensorLogger =>_logger as SensorLogger});
         } catch (e) {
             System.println(e.getErrorMessage());

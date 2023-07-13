@@ -1,7 +1,9 @@
-from bottle import route, run, template, get,post, request, error, static_file
+from bottle import route, run, request, error
 from pyngrok import ngrok
 import ngrok
 import sqlite3
+import os
+import json
 #import requests
 #import shutil
 
@@ -16,9 +18,16 @@ client = ngrok.Client("2OmnaBA4hgI1sRD4FhKTB5YDYdT_aG59uACn2SL7QwVCbXA6")
 # List all online tunnels
 for t in client.tunnels.list():
     print(t)
+"""
+os.system("curl  http://127.0.0.1:4040/status > tunnels.json")
+with open('tunnels.json') as data_file:    
+    datajson = json.load(data_file)
+msg = "ngrok URL's: \n"
+for i in datajson['tunnels']:
+  msg = msg + i['public_url'] +'\n'
 
-
-
+print (msg)
+"""
 
 
 @route('/', method = 'POST')
@@ -26,10 +35,21 @@ def LogData():
     data = request.json #type dict
     global data_sent
     data_sent  = request.json
-    sql = "INSERT INTO sensorsdata (id, accelx, accely, accelz, elevation, pressure, temperature) VALUES (?, ?, ?, ?, ?, ?, ?)"
-    cur = conn.cursor()
-    cur.execute(sql, (data['id'], data['Accelx'], data['Accely'], data['Accelz'], data['Elevation'], data['Pressure'], data['Temperature']))
-    conn.commit()
+    idData = data['id']
+    xData = data['Accelx']
+    yData = data['Accely']
+    zData = data['Accelz']
+    elevationData = data['Elevation']
+    pressureData = data['Pressure']
+    temperatureData = data['Temperature']
+    
+    for i in range(len(elevationData)):
+
+        for j in range(25):
+            sql = "INSERT INTO sensorsdata (id, accelx, accely, accelz, elevation, pressure, temperature) VALUES (?, ?, ?, ?, ?, ?, ?)"
+            cur = conn.cursor()
+            cur.execute(sql, (idData, xData[25*i+j], yData[25*i+j], zData[25*i+j], elevationData[i], pressureData[i], temperatureData[i]))
+            conn.commit()
     
     return "Data sent"
 
