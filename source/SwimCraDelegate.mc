@@ -12,9 +12,9 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
     var _x;
     var _y;
     var _z;
-    var temperatureData;
-    var pressureData;
-    var elevationData;
+    var temperatureData as Array<Number>;
+    var pressureData as Array<Number>;
+    var elevationData as Array<Number>;
     var recorded as Boolean;
     var pause as Boolean;
     var pressed as Boolean;
@@ -82,7 +82,6 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
                 if(elevationData.size() > 0){
                     elevationData = elevationData.remove(elevationData[0]);
                 }
-                
             }
         }
     	
