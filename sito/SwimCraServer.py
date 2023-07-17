@@ -13,8 +13,8 @@ conn = sqlite3.connect('sensorsdata.db') # Warning: This file is created in the 
 #conn.execute("INSERT INTO sensorsdata (task,status) VALUES ('Read A-byte-of-python to get a good introduction into Python',0)")
 
 data_sent = None
-
-client = ngrok.Client("2OmnaBA4hgI1sRD4FhKTB5YDYdT_aG59uACn2SL7QwVCbXA6")
+authtoken = "OmnaBA4hgI1sRD4FhKTB5YDYdT_aG59uACn2SL7QwVCbXA6"
+client = ngrok.Client(authtoken)
 # List all online tunnels
 for t in client.tunnels.list():
     print(t)

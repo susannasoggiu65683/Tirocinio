@@ -218,7 +218,7 @@ class SwimCraDelegate extends WatchUi.BehaviorDelegate {
 
         Communications.makeWebRequest(
             //url, // it changes
-            "https://13a4-84-220-196-199.ngrok-free.app",
+            "http://localhost:5000",
             myDict, // data
             options,
             method(:onReceive) //responseCallback
